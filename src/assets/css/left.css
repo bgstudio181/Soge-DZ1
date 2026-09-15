@@ -1,0 +1,74 @@
+*{
+  padding: 0;
+  margin: 0;
+  overflow: hidden;
+  
+}
+body{
+  height: 120vh;
+}
+main{
+  display: flex;
+}
+.left{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+
+  background: rgb(255,204,0);
+  height: 110vh;
+  width: 100px;
+  text-align: center;
+}
+.left section{
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  background:;
+  height: 80vh;
+  width: 80%;
+  margin: auto;
+  margin-top: 0;
+  margin-bottom: 0;
+}
+.logo{
+  place-self: center;
+  width: 100px;
+}
+.left div{
+  align-self: center;
+  height: 5px;
+  width: 256px;
+  background: black;
+  
+}
+.left a{
+  text-decoration: none;
+  color: black ;
+}
+.left i{
+  font-size: 32px;
+}
+.left span{
+  font-family: system-ui, -apple-system, sans-serif;
+  font-size: 22px;
+}
+.view{
+  background: none;
+  width: 100%;
+}
+.pub{
+  height: 120px;
+  place-self:center;
+  background:gray;
+  max-width:100% ;
+  min-width:100%;
+}
+@media (max-height:900px){
+  .view{
+    padding: 0;
+    margin: 0;
+    overflow-y: visible;
+    overflow-x: hidden;
+}
+}

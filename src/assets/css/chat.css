@@ -1,0 +1,63 @@
+#chat{
+  background: rgb(255,204,0,0.5);
+}
+
+.chat{
+  display: flex;
+  flex-direction: row;
+}
+.names{
+  height: 100vh;
+  width: 25%;
+  background:;
+  border-right: 2px gray solid;
+}
+.chat-block{
+  
+  height: 100vh;
+  width: 75%;
+  background:rgba(200,200,200,0.9);
+
+}
+.cell{
+  place-self: center;
+  width: 90%;
+  height: 10vh;
+  background: rgba(255,204,0,1);
+  box-shadow: 2px 2px 8px dimgrey;
+  border-radius: 30px;
+}
+
+
+.page{
+  height: 60vh;
+}
+
+.sent{
+  
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+  place-self: center;
+  border-radius: 40px;
+  height: 10vh;
+  width: 80%;
+  background:white;
+  box-shadow: 2px 2px 8px dimgrey;
+  direction: rtl;
+  align-items: center;
+}
+.sent-button{
+  margin-right: 10px ;
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  background:rgba(255,204,0,1);
+}
+input{
+  border-radius:20px;
+  width: 90%;
+  height: 5vh;
+  background:none;
+  border: 1px hwb(0 77% 23%) solid;
+}

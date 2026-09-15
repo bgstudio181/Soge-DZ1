@@ -1,0 +1,336 @@
+#profile{
+  background: rgb(255,204,0,0.5);
+}
+.main2{
+  background-image: url('src/assets/img/back/back2.png') ;
+  background-size: cover;
+  height: 100vh;
+}
+.information{
+  background:linear-gradient(rgba(255,255,255,0.5),rgb(255,204,0,0.5));
+  display: flex;
+  flex-direction: row;
+  width: 80%;
+  height: 35vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+.information .photo{
+  align-content: center;
+}
+.information div{
+  text-align: center;
+  direction: rtl;
+  width: 100%;
+  height: 100% ;
+}
+.information img{
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50% ;
+  background:linear-gradient(rgb(28,28,28,1),rgba(20,20,20,0.5));
+  box-shadow:2px 2px 8px gold;
+}
+
+.profilename{
+  color:red;
+}
+
+
+
+.information i{
+  color:black;
+  border-radius:50%;
+}
+
+
+
+
+
+.information button{
+  background: linear-gradient(rgba(255,204,0,0.5) ,white);
+  border-radius: 10px;
+  border: 2px rgba(255,204,0,0.5) solid ;
+  width: 95%;
+  margin: auto;
+}
+
+.setting1{
+  background:linear-gradient(rgb(255,204,0,0.5),rgba(255,255,255,0.5));
+  display: flex;
+  width: 80%;
+  height: 10vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+.setting1 div{
+  position: ;
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  width: 20%;
+  font-size: 16px;
+}
+.setting1 i{
+  margin-left: 10px;
+  align-content:center;
+  align-self:center;
+  font-size: 32px;
+}
+
+.on{
+  box-shadow: 2px 2px 8px green;
+  display: flex;
+  flex-direction: row;
+  height: 5vh;
+  background: linear-gradient(hwb(134 7% 73% / 0.6666666666666666),white);
+  border-radius:20px;
+  margin-left: 10px;
+  align-self:center;
+  width: 20px;
+}
+.on i{
+  font-size: 16px;
+  color: green;
+}
+.on p{
+  font-size: 24px;
+}
+
+.setting{
+  background:linear-gradient(rgb(255,204,0,0.5),rgba(255,255,255,0.5));
+  display: flex;
+  width: 80%;
+  height: 45vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+.ih{
+  background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,0.2));
+  backdrop-filter:blur(5px);
+  display: flex;
+  flex-direction: column;
+  width: 40%;
+  height: 40vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: 10px;
+  margin-top: 20px;
+}
+.iht{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: gray 1px solid;
+  background:linear-gradient(rgba(255,255,255),rgba(255,255,255,0.1));
+  width: 100%;
+  height: 5vh;
+}
+.iht h3{
+  display: inline;
+  margin: 5px;
+}
+.iht i{
+  place-self:start;
+  margin: 5px;
+}
+
+.ihbox{
+  display: grid;
+  grid-template-columns: repeat(2,2fr);
+  grid-template-rows: repeat(2,2fr) ;
+}
+.ihbox div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 32px;
+  border-radius:20px;
+  margin: 10px;
+  background: hwb(51 0% 38%);
+  box-shadow:2px 2px 8px black;
+  height: 100px;
+  width: 90%;
+}
+.ihbox i{
+
+}
+.ihbox h3{
+  margin: 0px;
+  font-size: 16px;
+}
+.ih2{
+  background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,0.2));
+  backdrop-filter:blur(5px);
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  height: 40vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: 10px;
+  margin-top: 20px;
+}
+.ih2t{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  border-bottom: gray 1px solid;
+  background:linear-gradient(rgba(255,255,255),rgba(255,255,255,0.1));
+  width: 100%;
+  height: 5vh;
+}
+.ih2t h3,.ih2t i{
+  display: inline;
+  margin: 5px;
+}
+.sing-in{
+  display: flex;
+  width: 60%;
+  height: 85vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+.sing-in div{
+  width: 100%;
+  background: red;
+  margin-top: 20%;
+}
+.name{
+  width: 50%;
+  height: 20px;
+  
+}
+.sing-in div input{
+  border-radius: 20px;
+  width: 40%;
+  height: 10%;
+  margin-left: ;
+  margin-top: 5%;
+}
+.notinformation{
+  display: flex;
+  flex-direction: column;
+  background:linear-gradient(rgba(255,255,255,0.2));
+  backdrop-filter: blur(10px);
+  display: flex;
+  width: 40%;
+  height: 75vh;
+  box-shadow: 2px 2px 8px rgb(255,204,0,0.5);
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 100px;
+  animation: ani 2s infinite alternate ease-in-out;
+}
+.notinformation a{
+  margin: 10px;
+  align-self:center;
+  color:rgb(255,204,0,0.5);
+}
+.notinformation p{
+  align-self:center;
+}
+.text{
+
+
+  font-size: 32px;
+  text-align:center ;
+  width: 100%;
+  height: 150px;
+  background:linear-gradient(rgb(28,28,30), rgb(20,20,20));
+  
+}
+.text img{
+  border-radius:50%;
+  width: 150px;
+  height: 150px;
+}
+.titre{
+  margin-right: 10px;
+  margin-top: 2vh;
+  font-size: 16px;
+  direction: rtl;
+}
+.titre label{
+  
+}
+.box{
+  margin-top: 20px ;
+  margin-left: 20vh;
+  display: flex;
+  flex-direction: row ;
+}
+.sing{
+  color:white;
+  background:linear-gradient(rgb(28,28,30), rgb(20,20,20));
+  border:rgb(255,204,0,0.5) 1px solid;
+  font-size: 32px;
+  border-radius:12px;
+  height: 5vh;
+  width: 80%;
+  align-self: center;
+}
+.Num{
+  place-self: center;
+  margin-top: 5vh;
+  font-size: 32px;
+}
+.sing1{
+  margin: 5px;
+  background: ;
+}
+.singbutton{
+  box-shadow: 2px 2px 8px rgb(255,204,0,0.5);
+  font-size: 26px;
+  background:linear-gradient(rgb(255,204,0,1), black) ;
+  margin-top: 10px;
+  place-self: center;
+  width: 80%;
+  border-radius:5px;
+  height: 7vh;
+  border:0px;
+}
+
+@keyframes ani{
+  0%{
+    box-shadow: 2px 2px 8px rgb(255,204,0,0.5);
+  }100%{
+    box-shadow: 20px 20px 30px rgb(255,204,0,0.5);
+  }
+}
+@media (prefers-color-scheme: dark) {
+    body{
+      background:linear-gradient(rgba(28,28,28,1),rgb(20,20,20,0.5));
+    }
+    .information {
+        background-color: #111;
+        color: #fff;
+        box-shadow: 2px 2px 8px gold;
+    }
+    .information button{
+      background: linear-gradient(rgba(28,28,28),rgba(240,204,0));;
+      border-radius: 10px;
+      border: 2px black solid ;
+      width: 95%;
+      margin: auto;
+    }
+    .setting ,.setting1{
+      box-shadow: 2px 2px 8px gold;
+    }
+    .ihbox div{
+      color:white;
+      background: linear-gradient(rgba(28,28,28),rgb(63, 54, 4));;
+    }
+
+
+  
+}

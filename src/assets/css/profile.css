@@ -1,0 +1,78 @@
+#profile{
+  background: rgb(255,204,0,0.5);
+}
+.information{
+  display: flex;
+  width: 80%;
+  height: 40vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+.information .photo{
+  align-content: center;
+}
+.information div{
+  text-align: center;
+  direction: rtl;
+  width: 20%;
+  height: 100% ;
+}
+.information img{
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50% ;
+  background:rgba(255,204,0,0.5);
+}
+.information i{
+  
+}
+.information button{
+  background: none;
+  border-radius: 10px;
+  border: 2px rgba(255,204,0,0.5) solid ;
+  width: 95%;
+  margin: auto;
+}
+.setting{
+  display: flex;
+  width: 80%;
+  height: 45vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 75px;
+}
+
+
+
+
+.sing-in{
+  display: flex;
+  width: 60%;
+  height: 85vh;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 20px;
+  margin: auto;
+  margin-top: 20px;
+}
+.sing-in div{
+  width: 100%;
+  background: red;
+  margin-top: 20%;
+}
+.name{
+  background:;
+  width: 50%;
+  height: 20px;
+  
+}
+.sing-in div input{
+  border-radius: 20px;
+  width: 40%;
+  height: 10%;
+  margin-left: ;
+  margin-top: 5%;
+}

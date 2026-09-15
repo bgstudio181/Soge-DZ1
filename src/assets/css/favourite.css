@@ -1,0 +1,39 @@
+#favourit{
+  background: rgb(255,204,0,0.5);
+}
+
+.favourit{
+  display: flex;
+  grid-template-columns: repeat(3);
+  overflow: hidden;
+  margin-left: 20px;
+  margin-top: 20px;
+  width: 40%;
+  height: 20%;
+  box-shadow: 2px 2px 8px black;
+  border-radius: 10px;
+}
+.favourit img{
+  height: 100%;
+  width: 40%;
+}
+.favourit i{
+  position: absolute;
+}
+.favourit div{
+  background: ;
+  width: 100%;
+}
+.titre{
+  font-weight: bold;
+}
+
+.model{
+  color: gray;
+}
+
+
+.price{
+  font-size: 20px;
+  margin-top: 60px;
+}
