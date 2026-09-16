@@ -15,7 +15,6 @@ function Main() {
     {id:16,img:"src/assets/img/Logo1/BMW.png"},
     {id:4,img:"src/assets/img/Logo1/TOYOTA.png"},
     {id:5,img:"src/assets/img/Logo1/VOLKSWAGEN.png"},
-
     {id:6,img:"src/assets/img/Logo1/SEAT.png"},
     {id:7,img:"src/assets/img/Logo1/OPEL.png"},
     {id:8,img:"src/assets/img/Logo1/NISSAN.png"},

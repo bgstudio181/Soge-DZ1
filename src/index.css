@@ -29,6 +29,8 @@ main{
 
 
 .left section{
+  align-self: center;
+  place-self: center;
   border-radius:5px;
   display: flex;
   flex-direction: column;
@@ -89,6 +91,8 @@ main{
 
 
 .hero{
+  place-self: center;
+  width: 70%;
   z-index: 20;
   display: flex;
   flex-direction: row-reverse;
@@ -117,7 +121,7 @@ main{
   position: absolute;
   background:white;
   height: 30%;
-  width: 50%;
+  width: 60%;
   box-shadow:2px 2px 8px black ;
 }
 .filtre1{
@@ -159,11 +163,11 @@ main{
 .sh2{
   border-radius:20px;
   margin-left: 50px;
-  margin-top: 140px;
+  margin-top: 150px;
   position: absolute;
   background:white;
-  height: 50%;
-  width: 30%;
+  height: 25%;
+  width: 40%;
   box-shadow:2px 2px 8px black ;
   
 }
@@ -219,7 +223,7 @@ main{
 }
 .titre{
   place-self:center;
-  width: 95%;
+  width: 65%;
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -252,6 +256,8 @@ main{
   background:rgb(255,204,0);
 }
 .model{
+  width: 50%;
+  place-self: center;
   align-content: center;
   overflow: hidden;
   height: 150px;
@@ -266,12 +272,12 @@ main{
 }
 .car{
   background:white;
-  box-shadow:2px 2px 8px black;
+  box-shadow:2px 2px 5px black;
   position: relative;
   border:gray 1px solid;
-  width: 125px;
+  width: 150px;
   border-radius: 20px;
-  height: 120px;
+  height: 140px;
 }
 .car:hover{
   width: 150px;
@@ -279,7 +285,7 @@ main{
 }
 .scrol div img{
   width: 100%;
-  height: 80px;
+  height: 100px;
   font-size: 300px;
 }
 .scrol div p{
@@ -289,7 +295,8 @@ main{
   font-family:'Cairo',sans-serif !important ;
 }
 .pope{
-  
+  width: 50%;
+  place-self: center;
   align-content: center;
   overflow: hidden;
   height: 100px;
@@ -322,10 +329,10 @@ main{
 
   
 .good{
-  
+  place-self: center;
   overflow: hidden;
   height: 400px;
-  width: 100%;
+  width: 50%;
 } 
 .scrol2{
   width: 4000px;
