@@ -31,13 +31,16 @@ function Main() {
   let models=[
     {name:"MINI",num:200,img:"src/assets/img/car/MINI.png"},
     {name:"VAN",num:200,img:"src/assets/img/car/VAN.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/SEDAN.png"},
     {name:"SUV",num:200,img:"src/assets/img/car/SUV.png"},
-    {name:"SUV",num:200,img:"src/assets/img/car/SUV.png"},
-    {name:"SUV",num:200,img:"src/assets/img/car/SUV.png"},
-    {name:"SUV",num:200,img:"src/assets/img/car/SUV.png"},
-    {name:"SUV",num:200,img:"src/assets/img/car/SUV.png"},
-    {name:"SUV",num:200,img:"src/assets/img/car/SUV.png"},
-    {name:"SUV",num:200,img:"src/assets/img/car/SUV.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/MINI.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/HAJ.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/GOOD.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/ELICTRI.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/CHANA.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/CLASSE.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/SPORT.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car/CHANA.png"},
     ]
   let model=models.map((item)=>{
     return (<div class="car"><img src={item.img} alt="car" /><p>حوالي {item.num} اعلان</p></div>)
@@ -72,11 +75,10 @@ function Main() {
             <Hero/>
             <div class="shop">
               <div class="titre">
-              <button class="chang" id="left1">&lt;
-</button>
-          <button class="chang" id="right1">&gt;
-</button>
-          <span class="t">انواع السيارات<div></div></span>
+              <span class="t">انواع السيارات<div></div></span>
+              <div><button class="chang" id="left1">&lt;</button>
+              <button class="chang" id="right1">&gt;</button></div>
+          
         </div>
         <div class="model">
           <div class="scrol" style={{marginLeft:{popescrol}+"px"}}>
@@ -84,11 +86,9 @@ function Main() {
           </div>
         </div>
         <div class="titre">
-          <button class="chang" id="left2">&lt;
-</button>
-          <button class="chang" id="right2">&gt;
-</button>
           <span class="t">الشعارات الرائدة<div></div></span>
+          <div ><button class="chang" id="left2">&lt;</button>
+          <button class="chang" id="right2">&gt;</button></div>
         </div>
         <div class="pope">
           <div class="scrol1">
@@ -99,11 +99,9 @@ function Main() {
           </div>
         </div>
         <div class="titre">
-          <button class="chang" id="left3"> &lt;
- </button>
-          <button class="chang" id="right3">&gt;
-</button>
           <span class="t">انواع السيارات<div></div></span>
+          <div><button class="chang" id="left3"> &lt;</button>
+          <button class="chang" id="right3">&gt;</button></div>
         </div>
         <div class="good">
           <div class="scrol2">

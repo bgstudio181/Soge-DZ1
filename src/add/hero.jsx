@@ -10,7 +10,7 @@ function hero() {
   return(
     <div class="hero">
       <div class="slach">
-        <img src="src/assets/pub/pub.png"/>
+        <img src="src/assets/img/hero/Back2.png"/>
       </div>      
       <div class="slach">
         
@@ -22,7 +22,7 @@ function hero() {
               </div>
               <div class="sh0">
           <div class="filtre1">
-                  <button onClick={she} ><i class="bi bi-search"/></button>
+                  <button onClick={she} ><span>بحث (100)</span><i class="bi bi-search"/></button>
           </div>
           <div class="filtre1">
             <h2>السعر</h2>

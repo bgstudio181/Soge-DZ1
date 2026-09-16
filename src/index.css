@@ -9,14 +9,18 @@ body{
   height: 120vh;
 }
 main{
+  overflow-y: auto ;
   display: flex;
 }
 .left{
+  z-index: 100;
   display: flex;
   flex-direction: column;
   gap: 15px;
-
   background:rgb(255,204,0,1);
+  background:white;
+  border-right: 1px black solid;
+  box-shadow:2px 2px 8px black;
   height: 110vh;
   width: 100px;
   text-align: center;
@@ -55,8 +59,9 @@ main{
   font-size: 32px;
 }
 .left span{
-  font-family: system-ui, -apple-system, sans-serif;
+  font-family:'Cairo',sans-serif !important ;
   font-size: 22px;
+  font-weight: 700;
 }
 .view{
   background: none;
@@ -84,6 +89,7 @@ main{
 
 
 .hero{
+  z-index: 20;
   display: flex;
   flex-direction: row-reverse;
   position: relative;
@@ -111,7 +117,7 @@ main{
   position: absolute;
   background:white;
   height: 30%;
-  width: 45%;
+  width: 50%;
   box-shadow:2px 2px 8px black ;
 }
 .filtre1{
@@ -132,6 +138,8 @@ main{
   height: 35%;
 }
 .filtre1 button{
+  font-weight: 700;
+  margin-top: 40px;
   font-family:'Cairo',sans-serif !important ;
   background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,0.5));
   border-radius: 10px;
@@ -141,7 +149,9 @@ main{
 .filtre1 button:active{
   background:linear-gradient(rgba(255,204,0,0.5),rgb(255,204,0,0.5));
 }
-
+.filtre1 button span{
+  margin: 10px;
+}
 
 .she{
   margin-right: 10px;
@@ -153,12 +163,12 @@ main{
   position: absolute;
   background:white;
   height: 50%;
-  width: 40%;
+  width: 30%;
   box-shadow:2px 2px 8px black ;
   
 }
 .bi.bi-truck, .bi.bi-car-front ,.bi.bi-bicycle {
-  font-size: 24px;
+  font-size: 32px;
 }
 
 
@@ -208,12 +218,20 @@ main{
   height: 100%;
 }
 .titre{
+  place-self:center;
+  width: 95%;
   display: flex;
-  align-content:space-around;
+  justify-content: space-between;
+  flex-direction: row;
+}
+.titre div{
+  display: flex;
+  gap: 5px;
+  flex-direction: row;
 }
 .chang{
-  color:white;
-  background:black; 
+  color: grey;
+  background:white; 
   width: 30px;
   height: 30px;
   border-radius: 50%;
@@ -224,6 +242,7 @@ main{
   margin-right: 2px;
   width: 100%;
   font-family:'Cairo',sans-serif !important ;
+  font-weight: 700;
   direction: rtl;
   align-items:right;
 }
@@ -250,21 +269,21 @@ main{
   box-shadow:2px 2px 8px black;
   position: relative;
   border:gray 1px solid;
-  width: 150px;
+  width: 125px;
   border-radius: 20px;
   height: 120px;
 }
 .car:hover{
-  width: 180px;
-  height: 140px;
-  background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,1));
+  width: 150px;
+  height: 130px;
 }
 .scrol div img{
   width: 100%;
-  height: 100px;
+  height: 80px;
   font-size: 300px;
 }
 .scrol div p{
+  font-weight: 700;
   justify-self: center;
   color:black;
   font-family:'Cairo',sans-serif !important ;
@@ -286,14 +305,15 @@ main{
 }
 .mark{
   background: white;
-  box-shadow:2px 2px 8px black;
+  box-shadow:2px 2px 5px black;
   border: grey 1px solid;
   height: 75px;
   width: 200px;
   border-radius: 20px;
 }
 .mark:hover{
-  background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,1));
+  height: 88px;
+  width: 210px;
 }
 .mark img{
   width: 150px;
@@ -318,8 +338,8 @@ main{
   
   background:white;
   position: relative;
-  height: 190px;
-  width: 350px;
+  height: 175px;
+  width: 250px;
   box-shadow: 2px 2px 8px black;
   border-radius: 20px;
 }
@@ -327,7 +347,7 @@ main{
   background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,1));
 }
 .offer i{
-  color:white;
+  color:rgb(255,204,0,1);
   padding: 5px;
   position: absolute;
 }
@@ -384,7 +404,6 @@ main{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background:gray;
   height: 70vh;
   width: 80%;
   margin: auto;
@@ -396,6 +415,14 @@ main{
   color:gold;
 } 
 
+.left div{
+  background:white;
+}
+
+  
+.left span{
+  color:gold;
+}
 
 .hero img{
   background:linear-gradient(rgba(20,20,20),rgba(28,28,28));

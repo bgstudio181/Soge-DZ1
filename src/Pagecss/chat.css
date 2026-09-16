@@ -1,7 +1,3 @@
-#chat{
-  background: rgb(255,204,0,0.5);
-}
-
 .chat{
   
   display: flex;
@@ -24,11 +20,14 @@
   flex-direction: column;
 }
 .namestext{
-  background:linear-gradient(rgba(240,204,20),rgba(255,255,255));
+  background:;
   height: 10vh;
   direction: rtl;
   font-size: 32px;
   
+}
+.divfill{
+  border-bottom: 1px black solid;
 }
 .fillnames{
   font-size: 24px;
@@ -40,26 +39,25 @@
   border-radius: 20px;
 }
 .chat-block{
-  background-image: url('src/assets/img/back/Back.png') ;
-  background-size: cover;
   height: 100vh;
   width: 75%;
 
 }
 .cell{
-  place-self: center;
-  width: 100%;
+  backdrop-filter:blur(30px);
+  box-shadow:2px 2px 8px black;
+  border-bottom: 1px black solid;
+  background:;
   height: 10vh;
-  background: linear-gradient(rgba(255,204,0,0.4),rgba(255,255,255));;
-  box-shadow: 2px 2px 8px dimgrey;
-  backdrop-filter: blur(5px);
+  direction: rtl;
+  font-size: 32px;
 }
 
 
 .page{
   
   overflow-y: auto;
-  height: 70vh;
+  height: 78vh;
 }
 .page2{
   
@@ -101,14 +99,10 @@
 .card{
   display:flex ;
   flex-direction: row;
-  border-radius:15px;
-  background:rgb(255,204,0,0.5);
   backdrop-filter: blur(10px);
   width: 100%;
-  height: 12%;
-  margin: 10px;
-  margin-left: 10px;
-  box-shadow:2px 2px 8px black;
+  height: 12vh;
+  border-bottom: 1px gray solid;
 }
 .sh{
   width: 300px;
@@ -117,10 +111,12 @@
   border:black 1px solid;
 }
 .photo1{
-  margin-top: 12px;
+  place-self: center;
+  align-self: center;
+  margin-top: 6px;
   margin-left: 5px;
-  height: 75px;
-  width: 75px;
+  height: 50px;
+  width: 50px;
   background:rgba(255,204,0,1);
   border-radius: 50%;
 }
@@ -131,6 +127,7 @@ h3{
   direction: rtl;
 }
 .bubble h3{
+  box-shadow:2px 2px 2px black;
   padding: 20px;
   margin: 10px;
   display: inline-block;

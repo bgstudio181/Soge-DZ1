@@ -1,7 +1,3 @@
-#chat{
-  background: rgb(255,204,0,0.5);
-}
-
 .chat{
   display: flex;
   flex-direction: row;

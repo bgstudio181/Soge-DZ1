@@ -17,7 +17,6 @@ function App() {
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/chat" element={<Chat/>}/>
       </Routes>
-      <Main/>
   
     </>
   )

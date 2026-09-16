@@ -1,4 +1,4 @@
-import {Link} from 'react-router-dom'
+import {NavLink} from 'react-router-dom'
 
 
 export default 
@@ -7,32 +7,36 @@ function Left() {
     <div class="left" >
       <img src="src/assets/img/logo/logo2.png" class="logo"/>
       <section>  
-        <Link to="/">
-          <a id="house" href="index.html"><i class="bi bi-house-door" ></i> <span>الرئيسية</span></a>
-        </Link>
-        <Link to="/profile">
-          <a id="profile" href="profile.html"><i class="bi bi-person"></i> <span>شخصي</span> </a>
-        </Link>
-        <Link to="/favourite">
-          <a href="favourite.html"><i class="bi bi-heart"></i> <span>مفضلة</span> </a>
-        </Link>
+        
+        <NavLink to="/" style={({ isActive }) => {if(isActive){return{color:"rgb(255,204,0,1)",}}else{return{color:"black",}}}} >
+          <i class="bi bi-house-door" ></i> <span>الرئيسية</span>
+        </NavLink>
+        <NavLink to="/profile" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
+          <i class="bi bi-person"></i> <span>شخصي</span>
+        </NavLink>
+        <NavLink to="/favourite" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
+          <i class="bi bi-heart"></i> <span>مفضلة</span>
+        </NavLink>
         <div ></div>
-        <Link to="/shop">
-          <a><i class="bi bi-shop"></i> <br/> <span>متجري</span> </a>
-        </Link>
-        <Link to="/chat">
-          <a id="chat" href="chat.html"><i class="bi bi-chat-dots"></i> <br/><span>محادثة</span> </a>
-        </Link>
-        <Link to="/price">
-          <a><i class="bi bi-graph-up-arrow"></i> <span>اسعار</span> </a>
-        </Link>
+        <NavLink to="/shop" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
+          <i class="bi bi-shop"></i> <br/> <span>متجري</span>
+        </NavLink>
+        <NavLink to="/chat" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
+          <i class="bi bi-chat-dots"></i> <br/><span>محادثة</span>
+        </NavLink>
+        <NavLink to="/price" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
+          <i class="bi bi-graph-up-arrow"></i> <span>اسعار</span>
+        </NavLink>
         
         
         
         
         
       </section>
-      <a id="exit" href=""><i class="bi bi-box-arrow-right" ></i> <br/> <span>خروج</span></a>
+      <NavLink to="/price">
+        <a id="exit" href=""><i class="bi bi-box-arrow-right" ></i> <br/> <span>خروج</span></a>
+      </NavLink>
+      
     </div>
   )  
 }

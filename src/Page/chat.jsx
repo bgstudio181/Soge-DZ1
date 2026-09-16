@@ -31,9 +31,10 @@ function Chat() {
       <div class="chat">
         
         <div class="names">
-          <div className="namestext">سيارتي</div>
-          <input className="fillnames"></input>
-          <div className="calldiv">
+          <div className="namestext">محادثات</div>
+          <div className="divfill" ><input className="fillnames" placeholder="ابحث عن محادثة..." ></input></div>
+          
+          <div className="calldiv"  >
             <div className="calldiv2">
               {call}
             </div>
