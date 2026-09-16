@@ -16,12 +16,13 @@ main{
   z-index: 100;
   display: flex;
   flex-direction: column;
+  justify-content:space-between;
   gap: 15px;
   background:rgb(255,204,0,1);
   background:white;
   border-right: 1px black solid;
   box-shadow:2px 2px 8px black;
-  height: 110vh;
+  height: 100vh;
   width: 100px;
   text-align: center;
 }
