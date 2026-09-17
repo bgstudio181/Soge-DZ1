@@ -25,7 +25,7 @@ main{
   height: 100vh;
   width: 100px;
   text-align: center;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 
 
@@ -359,7 +359,7 @@ main{
   width: 65%;
 } 
 .scrol2{
-  width: 4000px;
+  width: 100%;
   display: flex;
   flex-direction: row;
   gap: 40px; 
@@ -370,16 +370,18 @@ main{
   background:white;
   position: relative;
   height: 175px;
-  width: 250px;
+  width: 33%;
   border: rgba(200,200,200,0.2) 1px solid;
   box-shadow: 2px 2px 8px rgba(200,200,200,0.2);
   border-radius: 20px;
 }
 .offer:hover{
   height: 200px;
-  width: 300px;
+  width: 35%;
 }
 .offer i{
+  margin-top: 150px;
+  margin-left: 200px;
   color:rgb(255,204,0,1);
   padding: 5px;
   position: absolute;
@@ -394,6 +396,7 @@ main{
   position: absolute;
 }
 .name{
+  margin-left: 2px;
   font-family: fantasy;
   width: 100%;
   margin-top:100px ;
@@ -416,6 +419,7 @@ main{
   position: absolute;
 }
 .dat{
+  color: rgba(200,200,200,1);
   font-size:12px;
   direction: rtl;
   width: 80%;
