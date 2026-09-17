@@ -6,7 +6,7 @@
   
 }
 body{
-  height: 120vh;
+  height: 100vh;
 }
 main{
   overflow-y: auto ;
@@ -73,6 +73,8 @@ main{
   font-weight: 700;
 }
 .view{
+  height: 100vh;
+  overflow-y: visible;
   background: none;
   width: 100%;
 }
@@ -86,14 +88,6 @@ main{
 .pub img{
   width: 100%;
   height: 120px;
-}
-@media (max-height:900px){
-  .view{
-    padding: 0;
-    margin: 0;
-    overflow-y: visible;
-    overflow-x: hidden;
-}
 }
 
 
@@ -149,19 +143,19 @@ main{
   height: 35%;
 }
 .filtre1 button{
+  font-size: 20px;
   box-shadow:2px 2px 8px black;
   font-weight: 700;
-  margin-top: 40px;
-  font-family:'Cairo',sans-serif !important ;
   background: rgb(255,204,0,1);
   border-radius: 10px;
   width: 90%;
-  height: 35%;
+  height: 70%;
 }
 .filtre1 button:active{
   background:linear-gradient(rgba(255,204,0,0.5),rgb(255,204,0,0.5));
 }
 .filtre1 button span{
+  font-family:'Cairo',sans-serif !important ;
   margin: 10px;
 }
 
