@@ -35,7 +35,7 @@ main{
   display: flex;
   flex-direction: column;
   gap: 15px;
-  background:;
+  background:red;
   height: 70vh;
   width: 80%;
   margin: auto;
