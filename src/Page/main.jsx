@@ -12,18 +12,7 @@ function Main() {
     {id:3,img:"src/assets/img/Logo1/HYUNDAI.png"},
     {id:12,img:"src/assets/img/Logo1/FIAT.png"},
     {id:9,img:"src/assets/img/Logo1/MARCEDES-BENZ.png"},
-    {id:10,img:"src/assets/img/Logo1/KIA.png"},
     {id:16,img:"src/assets/img/Logo1/BMW.png"},
-    {id:4,img:"src/assets/img/Logo1/TOYOTA.png"},
-    {id:5,img:"src/assets/img/Logo1/VOLKSWAGEN.png"},
-    {id:6,img:"src/assets/img/Logo1/SEAT.png"},
-    {id:7,img:"src/assets/img/Logo1/OPEL.png"},
-    {id:8,img:"src/assets/img/Logo1/NISSAN.png"},
-    {id:13,img:"src/assets/img/Logo1/DACIA.png"},
-    {id:14,img:"src/assets/img/Logo1/CHEVROLET.png"},
-    {id:15,img:"src/assets/img/Logo1/CITROËN.png"},
-    {id:17,img:"src/assets/img/Logo1/RENAULT.png"},
-    {id:18,img:"src/assets/img/Logo1/RENAULT.png"},
   ]
   let pope=popes.map((item)=>{
     return(<button key={item.id} class="mark"><img src={item.img}/></button>)
@@ -41,9 +30,6 @@ function Main() {
     {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
     {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
     {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},   
   ]
   let Good=Goods.map((item)=>{
     return(<div class="offer">

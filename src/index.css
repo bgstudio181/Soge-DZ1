@@ -21,7 +21,7 @@ main{
   background:rgb(255,204,0,1);
   background:white;
   border-right: 1px black solid;
-  box-shadow:2px 2px 8px black;
+  box-shadow:2px 2px 16px rgba(200,200,200,0.6);
   height: 100vh;
   width: 100px;
   text-align: center;
@@ -43,17 +43,16 @@ main{
   margin-bottom: 0;
 }
 .logo{
-  place-self: center;
   width: 100%;
 }
-.left div{
+.left .slach{
   align-self: center;
   height: 5px;
   width: 256px;
   background: rgb(255,204,0,1);
   
 }
-.left i:hover{
+.left div:hover{
   color:rgb(255,204,0,1);
 }
 
@@ -278,7 +277,7 @@ main{
   place-self: center;
   align-content: center;
   overflow: hidden;
-  height: 180px;
+  height: 200px;
 }
 .scrol{
   height: 100%;
@@ -300,7 +299,7 @@ main{
 }
 .car:hover{
   width: 25%;
-  height: 160px;
+  height: 180px;
 }
 .scrol div img{
   width: 100%;
@@ -315,7 +314,7 @@ main{
 }
 .scrol div .num{
   font-weight: 700;
-  color:rgba(200,200,200,0.6);
+  color:rgba(200,200,200,1);
   font-family:'Cairo',sans-serif !important ;
 }
 .pope{
@@ -357,13 +356,13 @@ main{
   place-self: center;
   overflow: hidden;
   height: 500px;
-  width: 59%;
+  width: 65%;
 } 
 .scrol2{
   width: 4000px;
   display: flex;
   flex-direction: row;
-  gap: 20px; 
+  gap: 40px; 
   height: 100%;
 }
 .offer{
@@ -377,7 +376,8 @@ main{
   border-radius: 20px;
 }
 .offer:hover{
-  background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,1));
+  height: 200px;
+  width: 300px;
 }
 .offer i{
   color:rgb(255,204,0,1);
