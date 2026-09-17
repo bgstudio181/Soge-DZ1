@@ -272,7 +272,7 @@ main{
   background:rgb(255,204,0);
 }
 .model{
-  width: 62%;
+  width: 65%;
   place-self: center;
   align-content: center;
   overflow: hidden;
@@ -281,23 +281,23 @@ main{
 .scrol{
   height: 100%;
   display: flex;
-  gap: 20px;
-  width: 2500px;
+  gap: 40px;
+  width: 100%;
   align-items: center;
   align-content: center;
 }
 .car{
   overflow: visible;
   background:white;
-  box-shadow:2px 2px 5px gray;
-  border:gray 1px solid;
-  width: 180px;
+  box-shadow:2px 2px 5px rgba(200,200,200,0.2);
+  border:rgba(200,200,200,0.2) 2px solid;
+  width: 24%;
   border-radius: 20px;
   height: 140px;
   
 }
 .car:hover{
-  width: 220px;
+  width: 25%;
   height: 160px;
 }
 .scrol div img{
@@ -313,7 +313,7 @@ main{
 }
 .scrol div .num{
   font-weight: 700;
-  color:gray;
+  color:rgba(200,200,200,0.6);
   font-family:'Cairo',sans-serif !important ;
 }
 .pope{
@@ -334,8 +334,8 @@ main{
 }
 .mark{
   background: white;
-  box-shadow:2px 2px 5px gray;
-  border: grey 1px solid;
+  box-shadow:2px 2px 5px rgba(200,200,200,0.2);
+  border: rgba(200,200,200,0.2) 1px solid;
   height: 75px;
   width: 200px;
   border-radius: 20px;
@@ -370,7 +370,8 @@ main{
   position: relative;
   height: 175px;
   width: 250px;
-  box-shadow: 2px 2px 8px black;
+  border: rgba(200,200,200,0.2) 1px solid;
+  box-shadow: 2px 2px 8px rgba(200,200,200,0.2);
   border-radius: 20px;
 }
 .offer:hover{
