@@ -25,14 +25,12 @@ main{
   height: 100vh;
   width: 100px;
   text-align: center;
-  
+  justify-content: space-between;
 }
 
 
 
 .left section{
-  align-self: center;
-  place-self: center;
   border-radius:5px;
   display: flex;
   flex-direction: column;
@@ -123,7 +121,7 @@ main{
   background:white;
   height: 30%;
   width: 60%;
-  box-shadow:2px 2px 8px black ;
+  box-shadow:2px 2px 8px rgba(200,200,200,0.6) ;
 }
 .filtre1{
   font-family:'Cairo',sans-serif !important ;
@@ -137,14 +135,15 @@ main{
   color: rgb(255,204,0);
   background:none;
   direction: ltr;
-  border: grey 1px solid;
+  border: rgba(200,200,200,0.6) 1px solid;
   border-radius: 10px;
   width: 90%;
   height: 35%;
 }
 .filtre1 button{
   font-size: 20px;
-  box-shadow:2px 2px 8px black;
+  box-shadow:2px 2px 8px rgba(200,200,200,0.6);
+  border: 1px solid rgba(200,200,200,0.6); 
   font-weight: 700;
   background: rgb(255,204,0,1);
   border-radius: 10px;
@@ -152,7 +151,7 @@ main{
   height: 70%;
 }
 .filtre1 button:active{
-  background:linear-gradient(rgba(255,204,0,0.5),rgb(255,204,0,0.5));
+  background:rgba(200,200,200,0.6);
 }
 .filtre1 button span{
   font-family:'Cairo',sans-serif !important ;
@@ -170,7 +169,7 @@ main{
   background:white;
   height: 25%;
   width: 40%;
-  box-shadow:2px 2px 8px black ;
+  box-shadow:2px 2px 8px rgba(200,200,200,0.6) ;
   
 }
 .bi.bi-truck, .bi.bi-car-front ,.bi.bi-bicycle {
@@ -203,7 +202,7 @@ main{
   background:white;
   height: 60%;
   width: 10%;
-  box-shadow:2px 2px 8px black ; 
+  box-shadow:2px 2px 8px rgba(200,200,200,0.6) ; 
 }
 .sh3 h2{
   justify-self: center;
@@ -236,7 +235,7 @@ main{
   flex-direction: row;
 }
 .chang{
-  color: grey;
+  color: rgba(200,200,200,0.6);
   background:white; 
   width: 30px;
   height: 30px;
@@ -263,8 +262,11 @@ main{
   font-size: 16px;
   height: 30px;
   border-radius:20px;
-  color:rgb(255,204,0,1);
+  color:black;
   text-decoration: ;
+}
+.oth:hover{
+  color:rgb(255,204,0,1);
 }
 .t div{
   width: 5%;
@@ -302,7 +304,7 @@ main{
 }
 .scrol div img{
   width: 100%;
-  height: 120px;
+  height: 140px;
   font-size: 300px;
 }
 .scrol div .namemodel{
