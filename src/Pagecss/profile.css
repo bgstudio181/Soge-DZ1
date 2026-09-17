@@ -4,7 +4,7 @@
   height: 100vh;
 }
 .information{
-  background:linear-gradient(rgba(255,255,255,0.5),rgb(255,204,0,0.5));
+  background:;
   display: flex;
   flex-direction: row;
   width: 80%;
@@ -56,7 +56,7 @@
 }
 
 .setting1{
-  background:linear-gradient(rgb(255,204,0,0.5),rgba(255,255,255,0.5));
+  background:;
   display: flex;
   width: 80%;
   height: 10vh;
@@ -100,7 +100,7 @@
 }
 
 .setting{
-  background:linear-gradient(rgb(255,204,0,0.5),rgba(255,255,255,0.5));
+  background:;
   display: flex;
   width: 80%;
   height: 45vh;
@@ -110,7 +110,7 @@
   margin-top: 20px;
 }
 .ih{
-  background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,0.2));
+  background:;
   backdrop-filter:blur(5px);
   display: flex;
   flex-direction: column;
@@ -151,7 +151,7 @@
   font-size: 32px;
   border-radius:20px;
   margin: 10px;
-  background: hwb(51 0% 38%);
+  background: ;
   box-shadow:2px 2px 8px black;
   height: 100px;
   width: 90%;
@@ -164,7 +164,7 @@
   font-size: 16px;
 }
 .ih2{
-  background:linear-gradient(rgba(255,255,255,0.2),rgb(255,204,0,0.2));
+  background:;
   backdrop-filter:blur(5px);
   display: flex;
   flex-direction: column;
