@@ -21,7 +21,7 @@ function Main() {
     
     ]
   let model=models.map((item)=>{
-    return (<div class="car"><p className="namemodel">{item.name}</p><p className="num" >حوالي {item.num} اعلان</p><img src={item.img} alt="car" /></div>)
+    return (<div class="car2"><p className="namemodel">{item.name}</p><p className="num" >حوالي {item.num} اعلان</p><img src={item.img} alt="car" /></div>)
   })
   return (
     <>

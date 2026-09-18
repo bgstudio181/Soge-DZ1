@@ -26,6 +26,15 @@ main{
   width: 7%;
   text-align: center;
   justify-content: space-between;
+  animation:2s left;
+}
+@keyframes left{
+  0%{
+    height: 0vh;
+  }
+  100%{
+    height: 100vn;
+  }
 }
 
 
@@ -295,7 +304,7 @@ main{
   border:rgba(200,200,200,0.2) 2px solid;
   width: 24%;
   border-radius: 20px;
-  height: 140px;
+  height: 70%;
   animation: 2s car;
   transition: 0.5s;
 }
@@ -309,7 +318,7 @@ main{
 }
 .car:hover{
   width: 25%;
-  height: 180px;
+  height: 90%;
 }
 .scrol div img{
   width: 100%;
@@ -328,7 +337,7 @@ main{
   font-family:'Cairo',sans-serif !important ;
 }
 .pope{
-  width: 64%;
+  width: 65%;
   place-self: center;
   align-content: center;
   overflow: hidden;
@@ -382,6 +391,7 @@ main{
   height: 100px;
   width: 125px;
   border-radius: 20px;
+  transition: 0.5s;
   animation:2s studio;
 }
 @keyframes studio{
@@ -401,7 +411,27 @@ main{
   align-self: center;
   place-self: center;
 }
-  
+.car2{
+  overflow: visible;
+  background:white;
+  box-shadow:2px 2px 5px rgba(200,200,200,0.2);
+  border:rgba(200,200,200,0.2) 2px solid;
+  border-radius: 20px;
+  height: 40%;
+  animation: 2s car;
+  transition: 0.5s;
+}
+@keyframes car{
+  0%{
+    opacity: 0.1;
+  }
+  100%{
+    opacity: 1;
+  }
+}
+.car2:hover{
+  height: 60%;
+}  
 .good{
   align-content: center;
   place-self: center;
@@ -540,6 +570,7 @@ main{
   height: 75vh;
   width: 100%;
 }
+
 .scrol3-2{
   margin: 5px;
   display: grid;
@@ -567,7 +598,7 @@ main{
   gap: 15px;
 
   background:linear-gradient(rgba(28,28,28),rgba(0,0,0));
-  height: 110vh;
+  height: 100vh;
   width: 100px;
   text-align: center;
 }
@@ -582,12 +613,10 @@ main{
   margin-bottom: 0;
 }
 .left i{
-  font-size: 32px;
   color:gold;
 } 
 
 .left div{
-  background:white;
 }
 
   
