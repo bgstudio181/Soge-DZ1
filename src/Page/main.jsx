@@ -17,6 +17,17 @@ function Main() {
   let pope=popes.map((item)=>{
     return(<button key={item.id} class="mark"><img src={item.img}/></button>)
   })
+  let studios=[
+    {id:1,img:"src/assets/img/Studio/A.png"},
+    {id:2,img:"src/assets/img/Studio/B.png"},
+    {id:11,img:"src/assets/img/Studio/C.png"},
+    {id:3,img:"src/assets/img/Studio/D.png"},
+    {id:12,img:"src/assets/img/Studio/A.png"},
+    {id:9,img:"src/assets/img/Studio/B.png"},
+  ]
+  let studio=studios.map((item)=>{
+    return(<button key={item.id} class="studio"><img src={item.img}/></button>)
+  })
   let models=[
     {name:"MINI",num:200,img:"src/assets/img/car/1.png"},
     {name:"VAN",num:200,img:"src/assets/img/car/2.png"},
@@ -55,7 +66,7 @@ function Main() {
             <div class="shop">
               <div class="titre">
               <div class="t"><div></div>انواع السيارات</div>
-              <NavLink className="oth"><p>رؤية المزيد</p></NavLink>
+              <NavLink className="oth" to="/model"><p>رؤية المزيد</p></NavLink>
               
           
         </div>
@@ -66,7 +77,7 @@ function Main() {
         </div>
         <div class="titre">
           <div class="t"><div></div> الشعارات الرائدة</div>
-          <NavLink className="oth"><p>رؤية المزيد</p></NavLink>
+          <NavLink className="oth" to="/mark"><p>رؤية المزيد</p></NavLink>
         </div>
         <div class="pope">
           <div class="scrol1" style={{marginLeft: popescrol+"px"}}>
@@ -76,9 +87,25 @@ function Main() {
             
           </div>
         </div>
+
+        <div class="titre">
+          <div class="t"><div></div> المستودعات </div>
+          <NavLink className="oth" to="/studio"><p>رؤية المزيد</p></NavLink>
+        </div>
+        <div class="pope">
+          <div class="scrol1" style={{marginLeft: popescrol+"px"}}>
+            {studio}
+            
+
+            
+          </div>
+        </div>
+
+
+              
         <div class="titre">
           <div class="t"><div></div> العروض المميزة</div>
-          <NavLink className="oth"><p>رؤية المزيد</p></NavLink>
+          <NavLink className="oth" to="/good"><p>رؤية المزيد</p></NavLink>
         </div>
         <div class="good">
           <div class="scrol2" style={{marginLeft: goodscrol+"px"}}>
