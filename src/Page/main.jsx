@@ -3,6 +3,7 @@ import {NavLink} from 'react-router-dom'
 import Left from '../add/left'
 import Hero from '../add/hero'
 import Model from '../add/model'
+import AI from '../add/AI'
 export default
 function Main() {
   let popes=[
@@ -62,15 +63,16 @@ function Main() {
   })
   let [open,setopen]=useState(false)
   let [AIopen,setAIopen]=useState(false)
+  let [lang,setlang]=useState("ar")
   return (
     <>
         <main>
           <Left/>
           <div class="view">
             <button className="AI" onClick={()=>{setAIopen(true)}}><i className="bi bi-stars"></i></button>
-            <button className="sitting" onClick={()=>{setopen(true)}}><i className="bi bi-gear"></i></button>
-            <div className="sittingbar" style={{width: open===true? "20%": "0%",left: open===true? "80%": "100%"}}><div><i className="bi bi-x" onClick={()=>{setopen(false)}} ></i> <h2>الاعدادات</h2></div><div className="lang"><p  className="sittingbartitre">اللغة</p><br/><p>عربية</p><br/><p>FR</p><br/><p>EN</p></div></div>
-            <div className="sittingbar" style={{width: AIopen===true? "50%": "0%",left: AIopen===true? "50%": "100%"}}><div><i className="bi bi-x" onClick={()=>{setAIopen(false)}} ></i></div></div>
+            
+            <div className="sittingbar" style={{width: open===true? "40%": "0%",left: open===true? "60%": "100%"}}><div ><i className="bi bi-x" onClick={()=>{setopen(false)}} ></i> <h2>الاعدادات</h2></div><div className="lang"><p  className="sittingbartitre"></p><br/><p style={{color: lang=="ar"? "gold":"black"}} onClick={()=>{setlang("ar")}}>عربية</p><br/><p style={{color: lang=="fr"? "gold":"black"}} onClick={()=>{setlang("fr")}}>FR</p><br/><p style={{color: lang=="en"? "gold":"black"}} onClick={()=>{setlang("en")}}>EN</p> <i className="bi bi-translate"></i></div><div> <input type="checkbox"/>الوضع الليلي</div></div>
+            <div className="AIbar" style={{width: AIopen===true? "100%": "0%",left: AIopen===true? "0%": "100%"}}><div><i className="bi bi-x" onClick={()=>{setAIopen(false)}} ></i></div><AI/></div>
             <div class="pub"><img src="src/assets/pub/pub.png"/></div>
             <Hero/>
             <div class="shop">

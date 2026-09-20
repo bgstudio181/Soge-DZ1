@@ -1,14 +1,28 @@
-.scrol1-2{
-  height: 90vh;
+
+
+
+.model2{
+  overflow-y: auto;
+  height: 75vh;
+  width: 100%;
+}
+
+
+.scrolmodel-2{
   margin: 5px;
   display: grid;
   grid-template-columns: repeat(4,1fr) ;
-  gap: 10px;
+  gap: 5px;
   width: 100%;
 }
 @media (max-width:900px){
-  .scrol1-2{
+  .scrolmodel-2{
     grid-template-columns: repeat(3,1fr) ;
   }
   
+}
+@media (max-width:600px){
+  .scrolmodel-2{
+    grid-template-columns: repeat(2,1fr) ;
+  }
 }

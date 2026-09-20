@@ -1,8 +1,9 @@
 import { useState } from 'react'
 import {NavLink} from 'react-router-dom'
 import Left from '../../add/left'
+import '../../assets/css/mark.css'
 export default
-function Main() {
+function Pope() {
   let popes=[
     {id:1,img:"src/assets/img/Logo1/RENAULT.png"},
     {id:2,img:"src/assets/img/Logo1/PEUGEOT.png"},
@@ -30,7 +31,7 @@ function Main() {
     {id:16,img:"src/assets/img/Logo1/CHANGAN.png"},
   ]
   let pope=popes.map((item)=>{
-    return(<button key={item.id} class="mark"><img src={item.img}/></button>)
+    return(<button key={item.id} class="mark2"><img src={item.img}/></button>)
   })
   return (
     <>
@@ -38,15 +39,13 @@ function Main() {
           <Left/>
           <div class="view">
             <div class="pub"><img src="src/assets/pub/pub.png"/></div>
-            <div class="shop">
               <div class="exit"><NavLink to="/" className="oth"><p>عودة</p></NavLink><input></input></div>
         <div class="pope2">
-          <div class="scrol1-2" >
+          <div class="scrolmark-2" >
             {pope}
             
 
             
-          </div>
         </div>
         
         

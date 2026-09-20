@@ -423,12 +423,6 @@ main{
   border-radius:20px;
   width: 60%;
 }
-.pope2{
-  width: 97%;
-  overflow: hidden;
-  height: 100%;
-}
-
 .studio2{
   height: 90vh;
   overflow-y: auto;
@@ -445,11 +439,7 @@ main{
 
 
 
-.good2{
-  overflow-y: auto;
-  height: 75vh;
-  width: 100%;
-}
+
 
 .AI{
   z-index: 100;
@@ -462,6 +452,22 @@ main{
   border-radius: 50%;
   font-size: 32px;
   animation:AI 1s;
+  transition: 0.5s;
+}
+.AIbar{
+  z-index: 100;
+  position: absolute;
+  background:white;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
+  left: 80%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  width: 20%;
+  font-size: 32px;
+  animation:sittingbar 1s;
+  backdrop-filter: blur(2px);
+  opacity: 1;
   transition: 0.5s;
 }
 .AI:hover{
@@ -513,42 +519,39 @@ main{
   position: absolute;
   background:white;
   border-left: 1px solid black;
+  border-bottom: 1px solid black;
   left: 80%;
-  height: 100%;
+  height: 50%;
+  border-bottom-left-radius: 20px;
   width: 20%;
   font-size: 32px;
   animation:sittingbar 1s;
+  backdrop-filter: blur(2px);
+  opacity: 1;
   transition: 0.5s;
 }
-@keyframes sittingbar{
-  0%{
-    top:0%;
-    left: 0% ;
-    height: 0px;
-    width: 0px;
-  }
-  100%{
-    
-  }
-}
+
 .sittingbar div{
   display: flex;
   flex-direction: row;
-  gap: 20px;
+  justify-content: space-around;
   border-bottom: 1px solid gray;
+  font-family: 'Cairo';
   align-items:center;
 }
 .sittingbartitre{
+  display:flex;
+  flex-direction: row;
   color:gray;
   font-family: 'Cairo';
   font-weight: 700;
   font-size: 48px;
 }
 .sittingbar .lang{
-  gap: 5px;
   display: flex;
-  flex-direction: column;
-  height: 90vh;
+  flex-direction: row;
+  height: 10vh;
+  width: 100%;
 }
 @media (max-width:800px){
   .view{
@@ -574,11 +577,12 @@ main{
   .scrol{
     width: 100%;
   }
-  .car:nth-child(n+4){
+  
+  .car:nth-child(n+3){
     display: none ;
   }
   .car{
-    width: 30%;
+    width: 100%;
   }
   .car:hover{
     width: 50%;
@@ -590,7 +594,7 @@ main{
   .scrol1{
     width: 100%;
   }
-  .mark:nth-child(n+5){
+  .mark:nth-child(n+4){
     display: none;
   }
   .mark{
@@ -603,7 +607,7 @@ main{
   .mark img{
     width: 100%;
   }
-  .studio:nth-child(n+5){
+  .studio:nth-child(n+4){
     display: none;
   }
   .studio{
@@ -628,6 +632,19 @@ main{
   .offer:hover{
     width: 100%;
   }
+
+
+  .sitting,.AI{
+    left: 80%;
+  }
+    
+
+  
+
+
+
+
+  
 }
 
 

@@ -12,7 +12,7 @@ function Left() {
           <div><i class="bi bi-house-door" ></i> <span>الرئيسية</span></div>
         </NavLink>
         <NavLink className="nav" to="/profile" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
-          <div><i class="bi bi-person"></i> <span>شخصي</span></div>
+          <div><i class="bi bi-person"></i> <br/> <span>شخصي</span></div>
         </NavLink>
         <NavLink className="nav" to="/favourite" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
           <div><i class="bi bi-heart"></i><br/> <span>مفضلة</span></div>

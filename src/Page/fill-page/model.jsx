@@ -28,20 +28,17 @@ function Main() {
     <>
         <main>
           <Left/>
-          <div class="view">
+          <div class="view3">
             <div class="pub"><img src="src/assets/pub/pub.png"/></div>
-            <div class="shop">
               <div class="exit"><NavLink to="/" className="oth"><p>عودة</p></NavLink><input></input></div>
-        <div class="pope2">
-          <div class="scrol1-2" >
+        <div class="model2">
+          <div class="scrolmodel-2" >
             {model}
             
 
             
           </div>
-        </div>
-        
-        
+                
       </div>      
           </div>
         </main>

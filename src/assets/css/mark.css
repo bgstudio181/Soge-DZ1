@@ -1,0 +1,58 @@
+.pope2{
+  overflow-y: auto;
+  height: 75vh;
+  width: 100%;
+}
+
+
+.scrolmark-2{
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(4,1fr) ;
+  gap: 40px;
+  width: 100%;
+}
+
+.mark2{
+  background: white;
+  box-shadow:2px 2px 5px rgba(200,200,200,0.2);
+  border: rgba(200,200,200,0.2) 1px solid;
+  height: 75px;
+  width: 90%;
+  border-radius: 20px;
+  transition: 0.5s;
+  animation:2s mark;
+}
+@keyframes mark2{
+  0%{
+    margin: 100px;
+  }
+  100%{
+    
+  }
+}
+.mark2:hover{
+  height: 88px;
+  width: 100%;
+}
+.mark2 img{
+  width: 150px;
+  align-self: center;
+}
+
+
+@media (max-width:900px){
+  .scrol1-2{
+    grid-template-columns: repeat(3,1fr) ;
+    gap: 5px;
+  }
+  
+}
+@media (max-width:600px){
+  .mark2{
+    width: 90% ;
+  }
+  .scrol1-2{
+    grid-template-columns: repeat(3,1fr) ;
+  }
+}
