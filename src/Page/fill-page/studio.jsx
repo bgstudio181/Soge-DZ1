@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import {NavLink} from 'react-router-dom'
 import Left from '../../add/left'
+import '../../assets/css/studio.css'
 export default
 function Main() {
   let studios=[
@@ -59,7 +60,7 @@ function Main() {
             <div class="shop">
               <div class="exit"><NavLink to="/" className="oth"><p>عودة</p></NavLink><input></input></div>
         <div class="studio2">
-          <div class="scrol2-2" >
+          <div class="scrolstudio-2" >
             {studio}
             
 

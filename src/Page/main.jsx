@@ -72,7 +72,7 @@ function Main() {
             <button className="AI" onClick={()=>{setAIopen(true)}}><i className="bi bi-stars"></i></button>
             
             <div className="sittingbar" style={{width: open===true? "40%": "0%",left: open===true? "60%": "100%"}}><div ><i className="bi bi-x" onClick={()=>{setopen(false)}} ></i> <h2>الاعدادات</h2></div><div className="lang"><p  className="sittingbartitre"></p><br/><p style={{color: lang=="ar"? "gold":"black"}} onClick={()=>{setlang("ar")}}>عربية</p><br/><p style={{color: lang=="fr"? "gold":"black"}} onClick={()=>{setlang("fr")}}>FR</p><br/><p style={{color: lang=="en"? "gold":"black"}} onClick={()=>{setlang("en")}}>EN</p> <i className="bi bi-translate"></i></div><div> <input type="checkbox"/>الوضع الليلي</div></div>
-            <div className="AIbar" style={{width: AIopen===true? "100%": "0%",left: AIopen===true? "0%": "100%"}}><div><i className="bi bi-x" onClick={()=>{setAIopen(false)}} ></i></div><AI/></div>
+            <div className="AIbar" style={{width: AIopen===true? "40%": "0%",left: AIopen===true? "60%": "100%"}}><div><i className="bi bi-x" onClick={()=>{setAIopen(false)}} ></i></div><AI/></div>
             <div class="pub"><img src="src/assets/pub/pub.png"/></div>
             <Hero/>
             <div class="shop">
@@ -82,8 +82,8 @@ function Main() {
               
           
         </div>
-              <div class="model">
-          <div class="scrol">
+          <div class="model">
+          <div class="scrolmodel">
             {model}
           </div>
         </div>

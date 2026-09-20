@@ -1,0 +1,16 @@
+.studio{
+  background: white;
+  box-shadow:2px 2px 5px rgba(200,200,200,0.2);
+  border: rgba(200,200,200,0.2) 1px solid;
+  height: 100px;
+  width: 125px;
+  border-radius: 20px;
+  transition: 0.5s;
+  animation:2s studio;
+}
+.scrolstudio-2{
+  display: grid;
+  grid-template-columns: repeat(4,1fr) ;
+  gap: 20px;
+  width: 100%;
+}
