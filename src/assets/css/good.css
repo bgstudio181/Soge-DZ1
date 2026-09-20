@@ -1,0 +1,34 @@
+.scrol3-2{
+  margin: 5px;
+  display: grid;
+  grid-template-columns: repeat(2,1fr) ;
+  gap: 10px;
+  width: 100%;
+}
+.offer2{
+  display: flex;
+  flex-direction: row;
+  background:white;
+  position: relative;
+  height: 175px;
+  width: 80%;
+  border: rgba(200,200,200,0.2) 1px solid;
+  box-shadow: 2px 2px 8px rgba(200,200,200,0.2);
+  border-radius: 20px;
+  transition: 0.5s;
+}
+.offer2 img{
+  width: 40%;
+}
+.offer2:hover{
+  width: 95%;
+}
+@media (max-width:1000px){
+  .scrol3-2{
+    grid-template-columns: repeat(1,1fr) ;
+  }
+  .offer2{
+    width: 95%;
+    font-size: 12px;
+  }
+}

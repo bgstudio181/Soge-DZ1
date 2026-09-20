@@ -1,9 +1,8 @@
 import {useState} from 'react'
+import "../assets/css/hero.css"
 export default
 function hero() {
-  let animState=useState()
-  let animValue=animState[0]
-  let anim=animState[1]
+  let [type,settype]=useState("car")
   function she(){
     anim(20)
   }
@@ -16,9 +15,9 @@ function hero() {
         
         <img src="src/assets/img/hero/Baner2.png"/>
               <div  class="sh2">
-                <button  class="type" id="truck"><i class="bi bi-truck"></i></button>
-                <button  class="type" id="car"><i class="bi bi-car-front"></i></button>
-                <button  class="type" id="bicycle"><i class="bi bi-bicycle"></i></button>
+                <button  class="type" id="truck"><i class="bi bi-truck" style={{color: type=="truck"? "gold" : "black"}} onClick={()=>{settype("truck")}}></i></button>
+                <button  class="type" id="car"><i class="bi bi-car-front" style={{color: type=="car"? "gold" : "black"}} onClick={()=>{settype("car")}}></i></button>
+                <button  class="type" id="bicycle"><i class="bi bi-bicycle" style={{color: type=="moto"? "gold" : "black"}} onClick={()=>{settype("moto")}}></i></button>
               </div>
               <div class="sh0">
           <div class="filtre1">
@@ -41,8 +40,8 @@ function hero() {
               <option>الكل</option>
               <option>KIA</option>
               <option>BMW</option>
-              <option>RUNALTE</option>
-              <option>FAIT</option>
+              <option>RENAULT</option>
+              <option>FIAT</option>
               <option>GEELY</option>
             </select>
           </div>

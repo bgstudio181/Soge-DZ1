@@ -1,6 +1,7 @@
 import { useState } from 'react'
 import {NavLink} from 'react-router-dom'
 import Left from '../../add/left'
+import '../../assets/css/model.css' 
 export default
 function Main() {
   let models=[

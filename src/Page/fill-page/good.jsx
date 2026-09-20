@@ -1,16 +1,17 @@
 import { useState } from 'react'
 import {NavLink} from 'react-router-dom'
 import Left from '../../add/left'
+import '../../assets/css/good.css'
 export default
 function Main() {
   let Goods=[
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:true,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:false,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:false,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:true,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:false,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:false,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:true,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
     {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
     {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
     {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:"قابلة للتفاوض",price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
@@ -34,11 +35,18 @@ function Main() {
   let Good=Goods.map((item)=>{
     return(<div class="offer2">
       <img src={item.img}/> 
-      <i class="bi bi-heart" id="heart"></i>
-      <i class="bi bi-phone" id="phone"></i>
-      <h3 class="name">{item.name}</h3>
-      <h3 class="price">{item.price}</h3>
-      <h3 class="dat">2018📅.disle⛽️.1200km👣.⚙️auto</h3>
+      <div className="data">
+        <h2 class="name">{item.name}</h2>
+        <h3 class="dat">2018.disle.1200km.auto</h3>
+        <div className="priandfi"><h3 class="price">{item.price}</h3> <h4  style={{color: item.neg===true? "green":"red" }} >{item.neg===true? "قابل للتفاوض" :"غير قابل للتفاوض"}</h4></div>
+        <hr/>
+        <div className="con">
+          
+          <i class="bi bi-heart" id="heart"></i>
+          <i class="bi bi-telephone" id="phone">الهاتف</i>
+        </div>
+      </div>
+      
     </div>
            )
   })
@@ -46,6 +54,7 @@ function Main() {
     <>
         <main>
           <Left/>
+          
           <div class="superfill">
             <div class="filltext"><h2>فلتر متقدم</h2><i class="bi bi-search"></i></div>
             <div class="fillbox">
@@ -103,6 +112,7 @@ function Main() {
               <label>التحكم</label>
               <input type="checkbox"></input>
               <input type="checkbox"></input>
+              <div><input type="checkbox"></input></div>
             </div>
           </div>
           <div class="view2">

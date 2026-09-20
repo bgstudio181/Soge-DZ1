@@ -15,7 +15,7 @@ function Left() {
           <div><i class="bi bi-person"></i> <span>شخصي</span></div>
         </NavLink>
         <NavLink className="nav" to="/favourite" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
-          <div><i class="bi bi-heart"></i> <span>مفضلة</span></div>
+          <div><i class="bi bi-heart"></i><br/> <span>مفضلة</span></div>
         </NavLink>
         <div className="slach" ></div>
         <NavLink className="nav" to="/shop" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
@@ -25,7 +25,7 @@ function Left() {
           <div><i class="bi bi-chat-dots"></i> <br/><span>محادثة</span></div>
         </NavLink>
         <NavLink className="nav" to="/price" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
-          <div><i class="bi bi-graph-up-arrow"></i> <span>اسعار</span></div>
+          <div><i class="bi bi-graph-up-arrow"></i> <br/> <span>اسعار</span></div>
         </NavLink>
         
         

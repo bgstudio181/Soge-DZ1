@@ -3,6 +3,7 @@ import reactLogo from './assets/react.svg'
 import viteLogo from './assets/vite.svg'
 import heroImg from './assets/hero.png'
 import './App.css'
+import "./assets/css/left.css"
 import Main from './Page/main'
 import Model from './Page/fill-page/model'
 import Mark from './Page/fill-page/mark'
