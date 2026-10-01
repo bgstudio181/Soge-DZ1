@@ -25,6 +25,7 @@ function App() {
         <Route path="/good" element={<Good/>}/>
         <Route path="/profile" element={<Profile/>}/>
         <Route path="/chat" element={<Chat/>}/>
+        <Route path="/favourite" element={<Favori/>}/>
       </Routes>
   
     </>

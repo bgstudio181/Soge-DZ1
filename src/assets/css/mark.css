@@ -42,7 +42,7 @@
 
 
 @media (max-width:900px){
-  .scrol1-2{
+  .scrolmark-2{
     grid-template-columns: repeat(3,1fr) ;
     gap: 5px;
   }
@@ -52,7 +52,7 @@
   .mark2{
     width: 90% ;
   }
-  .scrol1-2{
-    grid-template-columns: repeat(3,1fr) ;
+  .scrolmark-2{
+    grid-template-columns: repeat(2,1fr) ;
   }
 }

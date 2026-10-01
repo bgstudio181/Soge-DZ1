@@ -1,5 +1,8 @@
 
-
+input{
+  direction: rtl;
+  padding: 5px;
+}
 
 .model2{
   overflow-y: auto;

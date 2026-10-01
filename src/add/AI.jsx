@@ -27,10 +27,10 @@ function AI() {
     <> 
       <main>
         <div class="view">
-      <div class="chat">        
-        <div class="chat-block">
-          <div class="page">
-            <div class="page2">
+      <div class="chatAI">        
+        <div class="chat-blockAI">
+          <div class="pageAI">
+            <div class="page2AI">
               {chat}
               
             </div>

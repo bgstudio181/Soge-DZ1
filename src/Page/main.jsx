@@ -30,10 +30,10 @@ function Main() {
     return(<button key={item.id} class="studio"><img src={item.img}/></button>)
   })
   let models=[
-    {name:"MINI",num:200,img:"src/assets/img/car/0.png"},
-    {name:"SIDAN",num:200,img:"src/assets/img/car/14.png"},
-    {name:"Big",num:200,img:"src/assets/img/car/3.png"},
-    {name:"SUV",num:200,img:"src/assets/img/car/4.png"},
+    {name:"MINI",num:200,img:"src/assets/img/car2/1.png"},
+    {name:"SIDAN",num:200,img:"src/assets/img/car2/2.png"},
+    {name:"Big",num:200,img:"src/assets/img/car2/3.png"},
+    {name:"SUV",num:200,img:"src/assets/img/car2/4.png"},
     ]
   let model=models.map((item)=>{
     return (<div class="car"><p className="namemodel">{item.name}</p><p className="num" >حوالي {item.num} اعلان</p><img src={item.img} alt="car" /></div>)

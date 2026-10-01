@@ -16,8 +16,10 @@
   position: absolute;
   width: 50%;
   height: 300px;
-  
+  /* تجعل الحدود سوداء تماماً ثم تضيف لون التظليل */
 }
+
+  
 .sh0{
   display: flex;
   flex-direction: row;

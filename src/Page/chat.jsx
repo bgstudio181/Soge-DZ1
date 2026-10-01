@@ -19,9 +19,11 @@ function Chat() {
   let chat=chats.map((item)=>{
     return(<div class="bubble"> <h3>{item.name}</h3></div>)
   })
-  let calls=[{name:"ahmed",src:3},{name:"ahmed",src:3},{name:"ahmed",src:3},{name:"ahmed",src:3},{name:"ahmed",src:3},{name:"ahmed",src:3},{name:"ahmed",src:3}]
+  let calls=[
+    {id:1,name:"ahmed",src:3},{id:2,name:"ahmed",src:3},{id:3,name:"ahmed",src:3},{id:4,name:"ahmed",src:3},{id:5,name:"ahmed",src:3},{id:6,name:"ahmed",src:3},{id:7,name:"ahmed",src:3}]
+  let [page,setpage]=useState()
   let call=calls.map((item1)=>{
-    return(<div class="card"> <img class="photo1" src="src/assets/img/car/2.png"/> <h3>{item1.name}</h3></div>)
+    return(<div class="card" onClick={()=>{setpage(item1.id)}} style={{background: page===item1.id? "rgba(255,240,0,0.2)" : "white"}}> <img class="photo1" src="src/assets/img/car/2.png"/> <h3>{item1.name}</h3></div>)
   })
   return (
     <> 
@@ -30,17 +32,7 @@ function Chat() {
         <div class="view">
       <div class="chat">
         
-        <div class="names">
-          <div className="namestext">محادثات</div>
-          <div className="divfill" ><input className="fillnames" placeholder="ابحث عن محادثة..." ></input></div>
-          
-          <div className="calldiv"  >
-            <div className="calldiv2">
-              {call}
-            </div>
-          </div>
-          
-        </div>
+        
         
         <div class="chat-block">
           <div class="cell">
@@ -60,7 +52,17 @@ function Chat() {
             
           </div>
         </div>
-
+        <div class="names">
+          <div className="namestext">محادثات</div>
+          <div className="divfill" ><input className="fillnames" placeholder="ابحث عن محادثة..." ></input></div>
+          
+          <div className="calldiv"  >
+            <div className="calldiv2">
+              {call}
+            </div>
+          </div>
+          
+        </div>
 
         
       </div>

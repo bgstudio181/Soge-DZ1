@@ -1,10 +1,11 @@
 .chat{
+  
   display: flex;
   flex-direction: row;
 }
 .names{
   height: 100vh;
-  width: 25%;
+  width: 30%;
   background:;
   border-right: 2px gray solid;
 }
@@ -18,7 +19,7 @@
 .cell{
   place-self: center;
   width: 90%;
-  height: 10vh;
+  height: 5vh;
   background: rgba(255,204,0,1);
   box-shadow: 2px 2px 8px dimgrey;
   border-radius: 30px;

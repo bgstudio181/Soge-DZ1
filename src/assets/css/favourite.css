@@ -1,4 +1,12 @@
-.favourit{
+.view-fav{
+  background: red;
+}
+
+
+
+
+
+.favourite{
   display: flex;
   grid-template-columns: repeat(3);
   overflow: hidden;
@@ -9,15 +17,14 @@
   box-shadow: 2px 2px 8px black;
   border-radius: 10px;
 }
-.favourit img{
+.favourite img{
   height: 100%;
   width: 40%;
 }
-.favourit i{
+.favourite i{
   position: absolute;
 }
-.favourit div{
-  background: ;
+.favourite div{
   width: 100%;
 }
 .titre{

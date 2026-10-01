@@ -1,14 +1,180 @@
+@import url('https://googleapis.com');
+
+
+.view0{
+  display: flex;
+  width: 100%;
+  height: 100vh;
+  background:;
+  flex-direction: column;
+}
+
+
+.pub2{
+  height: 120px;
+  display: flex;
+  flex-direction: row;
+}
+.pub2 img{
+  width: 60%;
+  height: 100px;
+  margin: auto;
+}
+
+
+.view0-1{
+  display: flex;
+  flex-direction: row;
+  height: 100vh;
+  width: 100%;
+}
+
+
+.view2{
+  width: 80%;
+}
+
+.exit{
+  background:none;
+  width: 100%;
+  height: 4vh;
+  font-weight: 700;
+  font-size: 24px;
+  font-family: 'Cairo';
+  display: flex ;
+  justify-content: space-between;
+  border-bottom: 0.5px gray solid;
+}
+
+.oth{
+  font-size: 20px;
+}
+.po{
+  border:1px gray solid;
+  border-radius:5px;
+}
+
+.exit select{
+  font-weight: 700;
+  font-family: 'Cairo';
+  border-radius:5px;
+  font-size: 18px;
+}
+
+
+.superfill{
+  width: 25%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.superfill2{
+  overflow-y: auto;
+  height: 94vh;
+}
+
+
+.superfill3{
+  place-self:center;
+  height: 5vh;
+  width: 60%;
+  border-radius:20px;
+  background:gold;
+  font-size: 24px;
+}
+.filltext{
+  margin-top: 0px;
+  width: 30%;
+  direction: rtl;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  font-weight: 700;
+  text-shadow: 2px 2px 2px gold;
+  font-family: 'Cairo';
+  font-size: 24px;
+}
+
+.filltext h2{
+  font-weight: 700;
+  font-family: 'Cairo';
+}
+
+
 
 .good2{
   overflow-y: auto;
-  height: 75vh;
+  height: 80vh;
   width: 100%;
+  opacity: 1;
+  backdrop-filter: blur(20px);
 }
-.scrol3-2{
-  margin: 5px;
+.good2 img{
+  border-radius: 20px;
+}
+
+.dat{
+  display: flex;
+  flex-direction: column;
+  height: 50px;
+  gap: 15px;
+  
+}
+
+
+.name{
+  display: block;
+  z-index: 100;
+}
+
+.fillout{
+  z-index: 100;
+  margin: 10px;
+  position: absolute;
+  border:1px black solid;
+  background:rgba(200,200,200,0.9);
+  height: 60vh;
+  width: 60vh;
+  border-radius:10px;
+  display: flex;
+  flex-direction: column;
+  transition: 0.5s ;
+}
+
+
+
+.fillouttitre{
+  width: 90%;
+  border-radius:5px;
+  align-self:center;
+}
+.filldata{
   display: grid;
-  grid-template-columns: repeat(2,1fr) ;
-  gap: 10px;
+  grid-template-columns: repeat(3,1fr);
+  height: 80%;
+  margin-top: 10px;
+  width: 100%;
+  
+}
+
+.elim{
+  direction: rtl;
+  align-content: center;
+  text-align: center;
+}
+.elim img{
+  width: 125px;
+  height: 75px;
+}
+.elim input{
+  display: none ;
+}
+
+.scrol3-2{
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
   width: 100%;
 }
 .offer2{
@@ -22,13 +188,202 @@
   box-shadow: 2px 2px 8px rgba(200,200,200,0.2);
   border-radius: 20px;
   transition: 0.5s;
+  animation: offer2 2s;
 }
+@keyframes offer2{
+  0%{opacity: 0;
+    }
+  100%{
+    
+  }
+}
+
 .offer2 img{
   width: 40%;
 }
 .offer2:hover{
   width: 95%;
 }
+.fillbox{
+  height: 90vh;
+  place-self: center;
+  align-items:center;
+  font-weight: 700;
+  background:;
+  border-top-left-radius:5px;
+  border-top-right-radius:5px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  width: 80%;
+}
+button label{
+  font-weight: 700;
+}
+div label{
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.fillbox1{
+  width: 80%;
+  border:1px rgba(200,200,200,1) solid;
+  box-shadow:2px 2px 8px rgba(200,200,200,1);
+  background:white;
+  border-radius:5px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items:center;
+  font-size: 24px;
+  transition: 0.5s;
+}
+.numandar{
+  width: 20%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+
+.numfill{
+  width: 30px;
+  height: 30px;
+  border-radius:5px;
+  background:gold;
+  color: white;
+}
+
+
+
+
+.fillbox2{
+  direction: rtl;
+  width: 100%;
+}
+
+
+select{
+  border:1px gray solid;
+  background:none;
+}
+
+
+
+
+
+
+
+.soldbox{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 5vh;
+}
+
+
+.sold{
+  margin-top: 5px;
+  position: relative;
+  height: 30px;
+  width: 62px;
+}
+.sold input{
+  display: none;
+}
+.slider{
+  width: 60px;
+  height: 28px;
+  position: absolute;
+  background:white;
+  border:1px grey solid;
+  border-radius:30px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.slider::before{
+  content: "";
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  background:red;
+  box-shadow:2px 2px 8px black;
+  border-radius:50%;
+  top: 4px;
+  left: 3px;
+  transition: 0.5s;
+}
+
+.sold input:checked + .slider::before{
+  background:green;
+  left: 33px;
+}
+
+.prifill{
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around ;
+  height: 80px;
+}
+.prifill input{
+  width: 40%;
+  height: 60px;
+  border-radius:15px;
+}
+
+
+.botibox{
+  
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  width: 100%;
+  height: 5vh;
+}
+.boti{
+  margin-top: 5px;
+  position: relative;
+  width: 62px;
+  height: 30px;
+}
+.boti input{
+  display: none;
+}
+.slider2{
+  position: absolute;
+  width: 60px;
+  height: 28px;
+  border:1px grey solid;
+  border-radius:30px;
+}
+
+
+
+
+.slider2::before{
+  content:"";
+  position: absolute ;
+  top: 4px;
+  height: 20px ;
+  width: 20px;
+  background:gold;
+  box-shadow:2px 2px 8px black;
+  border-radius:50%;
+  left: 3px;
+  transition: 0.5s;
+}
+.boti input:checked +.slider2::before{
+  left: 33px;
+}
+
+.range{
+  transition: 0.5s;
+}
+
+
+
 @media (max-width:1000px){
   .scrol3-2{
     grid-template-columns: repeat(1,1fr) ;

@@ -30,7 +30,7 @@ function Main() {
           <Left/>
           <div class="view3">
             <div class="pub"><img src="src/assets/pub/pub.png"/></div>
-              <div class="exit"><NavLink to="/" className="oth"><p>عودة</p></NavLink><input></input></div>
+              <div class="exit"><NavLink to="/" className="oth"><p>عودة</p></NavLink><input placeholder="ابحث عن مودالك الجديد"/><i className="bi bi-search"></i></div>
         <div class="model2">
           <div class="scrolmodel-2" >
             {model}

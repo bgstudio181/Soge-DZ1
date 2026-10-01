@@ -32,8 +32,8 @@ main{
   height: 120px;
   place-self:center;
   background:gray;
-  max-width:100% ;
-  min-width:100%;
+  max-width:80% ;
+  min-width:60%;
 }
 .pub img{
   width: 100%;
@@ -302,6 +302,23 @@ main{
   border-radius: 20px;
   transition: 0.5s;
 }
+.offer:hover{
+  width: 65%;
+  height: 200px;
+}
+
+.offer img{
+  width: 40%;
+  height: 175px;
+  transition: 0.5s;
+}
+
+
+.offer:hover img{
+  height: 200px;
+}
+
+
 
 .con{
   display: flex;
@@ -320,10 +337,7 @@ main{
 }
 #phone{
 }
-.offer img{
-  width: 40%;
-  height: 175px;
-}
+
 .data{
   width: 60%;
   display: flex;
@@ -349,6 +363,7 @@ main{
 }
 
 .price{
+  font-size: 24px;
   margin: 0px;
   font-family:'Cairo',sans-serif !important ;
   direction: rtl;
@@ -364,13 +379,18 @@ main{
 
   
 }
-.dat{
-  color: rgba(200,200,200,1);
-  font-size: 16px;
-  direction: rtl;
-  width: 80%;
+
+.dat0{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
 }
-.view2{
+
+
+.dat{
+  color: rgba(00,0,0,1);
+  font-size: 12px;
+  direction: rtl;
   width: 80%;
 }
 .superfill{
