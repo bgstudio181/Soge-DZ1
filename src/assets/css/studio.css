@@ -8,6 +8,12 @@
   transition: 0.5s;
   animation:2s studio;
 }
+
+
+.studio2{
+  height: 80vh;
+}
+
 .scrolstudio-2{
   display: grid;
   grid-template-columns: repeat(6,1fr) ;

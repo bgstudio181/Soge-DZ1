@@ -40,27 +40,32 @@ function Main() {
   })
   let [Goods,setGoods]=useState([
     {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:true,price:"8,00,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto",fav:true},
-    {name:"Honda",img:"src/assets/img/Good/1.jpg",con:"جديدة",neg:false,price:"4,000,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
-    {name:"BMW409",img:"src/assets/img/Good/1.jpg",con:"جديدة",neg:true,price:"4,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto"},
   ])
-  let Good=Goods.map((item)=>{
-    return(<div class="offer">
+  let Good=Goods.map((item)=>{return(<div class="offer2">
       <img src={item.img}/> 
       <div className="data">
         <h2 class="name">{item.name}</h2>
-        <h3 class="dat">2018.disle.1200km.auto</h3>
-        <div className="priandfi"><h3 class="price">{item.price}</h3> <h4  style={{color: item.neg===true? "green":"red" }} >{item.neg===true? "قابل للتفاوض" :"غير قابل للتفاوض"}</h4></div>
+        <div className="dat0">
+          <h3 className="dat"><p>التاريخ:{item.date}</p><p>الطاقة:{item.tayp}</p></h3>
+          <hr/>
+          <h3 className="dat"><p>التحكم:{item.control}</p><p>المسافة:{item.km+"km"}</p></h3>  
+        </div>    
+        <div className="priandfi"><h3 class="price">{item.price}دج</h3> <h3 className="po" style={{color: item.neg===true? "green":"red" }}>عرض ممتاز</h3><h4 style={{color: "black"}}>{item.neg===true? "قابل للتفاوض" :"غير قابل للتفاوض"}</h4></div>
         <hr/>
         <div className="con">
+
           
-          <i class={item.fav===true? "bi bi-heart-fill":"bi bi-heart"} id="heart"></i>
-          <i class="bi bi-telephone" id="phone">تواصل</i>
+            <i class="bi bi-heart" id="heart"></i>
+            <i class="bi bi-chat-dots" id="phone">مراسلة</i>
+            <i class="bi bi-telephone" id="phone">الهاتف</i>
+        
+          <div>
+             
+          </div>
         </div>
       </div>
       
-    </div>
-           )
-  })
+    </div>)})
   let [open,setopen]=useState(false)
   let [AIopen,setAIopen]=useState(false)
   let [lang,setlang]=useState("ar")

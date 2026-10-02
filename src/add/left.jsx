@@ -5,11 +5,11 @@ export default
 function Left() {
   return(
     <div class="left" >
-      <img src="src/assets/img/logo/logo2.png" class="logo"/>
+      <img src="src/assets/img/logo/logo5.png" class="logo"/>
       <section>  
         
         <NavLink className="nav" to="/" style={({ isActive }) => {if(isActive){return{color:"rgb(255,204,0,1)",}}else{return{color:"black",}}}} >
-          <div><i class="bi bi-house-door" ></i> <span>الرئيسية</span></div>
+          <div><i class="bi bi-house-door" ><br/> </i> <span>الرئيسية</span></div>
         </NavLink>
         <NavLink className="nav" to="/profile" style={({isActive})=>{if(isActive){return{color:"rgb(255,204,0,1)"}}else{return{color:"black"}}}}>
           <div><i class="bi bi-person"></i> <br/> <span>شخصي</span></div>

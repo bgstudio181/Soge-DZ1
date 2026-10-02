@@ -14,6 +14,7 @@ main{
   overflow-x: hidden ;
   overflow-y: auto ;
   display: flex;
+  flex-direction: column;
 }
 
 
@@ -26,7 +27,8 @@ main{
 
 .view{
   overflow-y: auto;
-  width: 93%;
+  height: 500vh;
+  width: 100%;
 }
 .pub{
   height: 120px;
@@ -281,14 +283,9 @@ main{
   width: 65%;
 } 
 .scrol2{
-  width: 100%;
   display: flex;
   flex-direction: row;
-  gap: 40px; 
   height: 100%;
-}
-.offer:nth-child(n+3){
-  display: none;
 }
 .offer{
   display: flex;
@@ -338,16 +335,7 @@ main{
 #phone{
 }
 
-.data{
-  width: 60%;
-  display: flex;
-  flex-direction: column;
-}
-.name{
-  margin: 0px;
-  font-size: 20px;
-  font-weight: 500;
-}
+
 
 
 .priandfi{

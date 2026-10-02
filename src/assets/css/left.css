@@ -2,15 +2,15 @@
 .left{
   z-index: 100;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   
   gap: 15px;
   background:rgb(255,204,0,1);
   background:white;
   border-right: 1px black solid;
   box-shadow:2px 2px 16px rgba(200,200,200,0.6);
-  height: 100vh;
-  width: 7%;
+  height: 10vh;
+  width: 100%;
   text-align: center;
   justify-content: space-between;
   animation:2s left;
@@ -27,23 +27,25 @@
 .left section{
   border-radius:5px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   justify-content: center;
-  gap: 15px;
+  justify-content: space-around;
+  align-content: center;
+  place-items: center;
   background:;
-  height: 70vh;
+  height: 10vh;
   width: 80%;
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
 .logo{
-  width: 100%;
+  width: 7%;
 }
 .left .slach{
   align-self: center;
-  height: 5px;
-  width: 256px;
+  height: 100px;
+  width: 10px;
   background: rgb(255,204,0,1);
   
 }
@@ -55,7 +57,7 @@
   color: black ;
 }
 .left i{
-  font-size: 32px;
+  font-size: 30px;
 }
 .left span{
   font-family:'Cairo',sans-serif !important ;

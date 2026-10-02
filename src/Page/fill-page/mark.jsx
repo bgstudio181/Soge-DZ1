@@ -39,7 +39,7 @@ function Pope() {
           <Left/>
           <div class="view">
             <div class="pub"><img src="src/assets/pub/pub.png"/></div>
-              <div class="exit"><NavLink to="/" className="oth"><p>عودة</p></NavLink><input placeholder="ابحث عن ماركتك الجديدة"></input></div>
+              <div class="exit"><NavLink to="/" className="oth"><p>عودة</p></NavLink></div>
         <div class="pope2">
           <div class="scrolmark-2" >
             {pope}
