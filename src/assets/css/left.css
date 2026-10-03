@@ -1,9 +1,23 @@
+@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+
+
+
 /*this is css code of left bar*/
+
+
+
+
 .left{
   z-index: 100;
   display: flex;
   flex-direction: row;
-  
+  direction: rtl;
   gap: 15px;
   background:rgb(255,204,0,1);
   background:white;
@@ -32,16 +46,23 @@
   justify-content: space-around;
   align-content: center;
   place-items: center;
-  background:;
   height: 10vh;
-  width: 80%;
+  width: 50%;
   margin: auto;
   margin-top: 0;
   margin-bottom: 0;
 }
 .logo{
-  width: 7%;
+  width: 5%;
+  margin-right: 20px;
 }
+
+
+.nav{
+  border-radius:15px;
+  padding: 8px;
+}
+
 .left .slach{
   align-self: center;
   height: 100px;
@@ -57,14 +78,66 @@
   color: black ;
 }
 .left i{
-  font-size: 30px;
+  margin: 5px;
+  font-size: 16px;
 }
 .left span{
-  font-family:'Cairo',sans-serif !important ;
-  font-size: 22px;
+  font-family: 'Tajawal', sans-serif !important;
+  font-size: 16px;
   font-weight: 700;
 }
+.loginbutt{
+  margin-left: 100px;
+  height: 10vh;
+  width: 200px;
+  align-items: center;
+  align-content:center;
+}
 
+
+.not{
+  margin-left: 10px;
+  height: 10vh;
+  
+  align-items: center;
+  align-content:center;
+}
+
+.not i{
+  font-size: 24px;
+  color:black;
+  position: relative;
+}
+
+#notnumb{
+  overflow: visible;
+  align-items: center;
+  align-content:center;
+  top: -30%;
+  left: 50%;
+  position: absolute;
+  background: gold;
+  border:1px solid black;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+}
+#notnumb p{
+  margin-top: 3px;
+  align-self:center;
+  place-self: center;
+}
+
+.loginbutt span{
+  padding: 10px;
+  border: 1px gold solid;
+  border-radius:15px;
+  background:gold;
+  box-shadow:2px 2px 8px rgba(200,200,200,1);
+  font-family: 'Tajawal', sans-serif;
+}
 
 
 
@@ -113,7 +186,7 @@
     height: 50px;
   }
   .left{
-    width: 15%;
+    ;
   }
   .left section{
     height: 70vh;
@@ -125,8 +198,6 @@
   font-size: 24px;
 }
   .left span{
-  font-size: 14px;
-  font-weight: 100;
 }
 
 

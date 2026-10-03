@@ -31,7 +31,9 @@ main{
   width: 100%;
 }
 .pub{
-  height: 120px;
+  margin: 100px;
+  margin-top: 50px;
+  height: 200px;
   place-self:center;
   background:gray;
   max-width:80% ;
@@ -39,7 +41,7 @@ main{
 }
 .pub img{
   width: 100%;
-  height: 120px;
+  height: 200px;
 }
 
 
@@ -193,10 +195,18 @@ main{
   place-self: center;
   align-content: center;
   overflow: hidden;
-  height: 100px;
+  height: 120px;
+  margin-bottom: 50px;
 }
 
-
+.popestudio{
+  width: 65%;
+  place-self: center;
+  align-content: center;
+  overflow: hidden;
+  height: 120px;
+  margin-bottom: 85px;
+}
 
 
 .scrol1{
@@ -207,6 +217,7 @@ main{
   width: 3100px;
   align-items: center;
   align-content: center;
+  margin: 10px;
 }
 
 
@@ -276,6 +287,7 @@ main{
   height: 60%;
 }  
 .good{
+  display: none;
   align-content: center;
   place-self: center;
   overflow: hidden;
@@ -443,20 +455,22 @@ main{
 .AI{
   z-index: 100;
   position: absolute;
-  background:gold;
-  top: 90%;
-  left: 95%;
-  height: 50px;
-  width: 50px;
+  background:none;
+  border:none;
+  top: 70%;
+  left: 92%;
+  height: 60px;
+  width: 60px;
   border-radius: 50%;
-  font-size: 32px;
+  font-size: 40px;
   animation:AI 1s;
   transition: 0.5s;
+  color:gold;
 }
 .AIbar{
   z-index: 100;
   position: absolute;
-  background:white;
+  background:;
   border-left: 1px solid black;
   border-bottom: 1px solid black;
   left: 80%;
@@ -484,6 +498,23 @@ main{
     
   }
 }
+
+
+
+.chatAI{
+  background:red;
+  height: 100vh;
+}
+.chat-blockAI{
+  height: 100vh;
+  background:blue;
+}
+.pageAI{
+  overflow-y: auto;
+  height: 75vh;
+  background:green;
+}
+
 
 .sitting{
   z-index: 100;
@@ -552,6 +583,51 @@ main{
   height: 10vh;
   width: 100%;
 }
+
+.end{
+  height: 50vh;
+  width: 100%;
+  border-top: 1px grey solid;
+  box-shadow:2px 2px 8px grey;
+  direction: rtl;
+
+  
+}
+
+.end p{
+  margin: 10px;
+}
+
+.end1{
+  font-weight: 700;
+  font-size: 24px;
+  text-shadow: 1px 2px 2px gray;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-between;
+}
+.end1-1{
+  font-weight: 700;
+  font-size: 24px;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  justify-content:space-around;
+  width: 70%;
+}
+.end1-1 i{
+  margin: 10px;
+}
+.end2{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+.end2 p:nth-of-type(1){
+  color:gold;
+}
+
 @media (max-width:800px){
   .view{
     width: 100%;
@@ -612,6 +688,7 @@ main{
   .studio{
     height: 80px;
     width: 20%;
+    
   }
   .studio:hover{
     height: 90px;

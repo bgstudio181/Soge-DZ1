@@ -23,13 +23,13 @@ function Chat() {
     {id:1,name:"ahmed",src:3},{id:2,name:"ahmed",src:3},{id:3,name:"ahmed",src:3},{id:4,name:"ahmed",src:3},{id:5,name:"ahmed",src:3},{id:6,name:"ahmed",src:3},{id:7,name:"ahmed",src:3}]
   let [page,setpage]=useState()
   let call=calls.map((item1)=>{
-    return(<div class="card" onClick={()=>{setpage(item1.id)}} style={{background: page===item1.id? "rgba(255,240,0,0.2)" : "white"}}> <img class="photo1" src="src/assets/img/car/2.png"/> <h3>{item1.name}</h3></div>)
+    return(<div class="card" onClick={()=>{setpage(item1.id)}} style={{background: page===item1.id? "rgba(255,240,0,0.2)" : "white"}}> <div className="profillimg"><img class="photo1" src="src/assets/img/car/2.png"/><i className="bi bi-circle-fill"></i></div> <h3>{item1.name}</h3></div>)
   })
   return (
     <> 
       <main>
         <Left/>
-        <div class="view">
+
       <div class="chat">
         
         
@@ -37,6 +37,16 @@ function Chat() {
         <div class="chat-block">
           <div class="cell">
             <div></div>
+          </div>
+          <div class="theoffer">
+            <div>
+              <img src="src/assets/img/Good/1.jpg" class="logo"/>
+              <div>
+                <p>استفسر عن:</p>
+                <br/>
+                <p>BMW</p>
+              </div>
+            </div>
           </div>
           <div class="page">
             <div class="page2">
@@ -65,7 +75,6 @@ function Chat() {
         </div>
 
         
-      </div>
     </div>
       </main>
 

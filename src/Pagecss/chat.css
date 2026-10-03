@@ -1,3 +1,16 @@
+@import url('https://googleapis.com');
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Almarai:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Readex+Pro:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Alexandria:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Vazirmatn:wght@400;500;700&display=swap');
+
+*{
+  font-family: 'Tajawal' ;
+}
+
+
 .view{
   align-content:center;
 }
@@ -5,21 +18,21 @@
 
 
 .chat{
-  
   margin: auto;
+  margin-top: 50px;
   height: 80vh;
-  width: 60%;
+  width: 80%;
   display: flex;
   flex-direction: row;
   border:1px solid grey;
-  border-radius: 5px;
+  border-radius: 15px;
 }
 .names{
   
   
-  
+  direction: rtl;
   height: 100vh;
-  width: 30%;
+  width: 50%;
   border-left: 2px gray solid;
 }
 .calldiv{
@@ -42,7 +55,9 @@
   
 }
 .fillnames{
-  font-size: 24px;
+  border:none;
+  background:rgba(200,200,200,0.6);
+  font-size: 16px;
   direction: rtl;
   margin: 20px;
   align-self: center;
@@ -56,19 +71,49 @@
 
 }
 .cell{
+  z-index: 100;
   backdrop-filter:blur(30px);
   box-shadow:2px 2px 8px black;
   border-bottom: 1px black solid;
   background:;
-  height: 7vh;
+  height: 10vh;
   direction: rtl;
   font-size: 32px;
+}
+.theoffer{
+  z-index: 99;
+  background:rgba(200,200,200,0.2);
+  border-radius:15px;
+  margin: auto;
+  margin-top: 20px;
+  border:1px gray solid;
+  border-bottom: 1px black solid;
+  height: 12vh;
+  width: 95%;
+  direction: rtl;
+  font-size: 32px;
+}
+.theoffer div{
+  font-size: 16px;
+  height: 12vh;
+  width: 50%;
+  display: flex;
+  flex-direction: row;
+  align-items:center;
+  
+}
+
+.theoffer div img{
+  border-radius: 15px;
+  height: 9vh;
+  width: 35%;
+  
 }
 
 
 .page{
   overflow-y: auto;
-  height: 65vh;
+  height: 45vh;
 }
 .page2{
   
@@ -121,16 +166,40 @@
   margin: 10px;
   border:black 1px solid;
 }
-.photo1{
+
+
+
+.profillimg{
   place-self: center;
   align-self: center;
-  margin-top: 6px;
+  position: relative;
+}
+
+
+.photo1{
+  border:1px black solid;
+  padding: 10px;
+  place-self: center;
+  align-self: center;
+  margin: 10px;
   margin-left: 5px;
   height: 50px;
   width: 50px;
-  background:rgba(255,204,0,1);
   border-radius: 50%;
 }
+
+.profillimg .bi.bi-circle-fill{ 
+  opacity: 1;
+  z-index: 100;
+  position: absolute;
+  color: green;
+  top: 65%;
+  left: 14%;
+  transition: 0.75s;
+}
+
+
+
 h3{
   margin: 20px;
 }
@@ -138,13 +207,14 @@ h3{
   direction: rtl;
 }
 .bubble h3{
-  box-shadow:2px 2px 2px black;
+  box-shadow:2px 2px 2px gray;
   padding: 20px;
   margin: 10px;
   display: inline-block;
-  border-radius: 40px 0px 40px 40px;
+  border-radius: 20px 0px 20px 20px;
   backdrop-filter: blur(10px);
   background:rgba(255,204,0,0.9);
+  font-size: 14px;
 }
 .bubble2{
   direction: ltr;

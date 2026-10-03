@@ -39,7 +39,7 @@ function Main() {
     return (<div class="car"><p className="namemodel">{item.name}</p><p className="num" >حوالي {item.num} اعلان</p><img src={item.img} alt="car" /></div>)
   })
   let [Goods,setGoods]=useState([
-    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:true,price:"8,00,000دج",date:"2020",tayp:"disle",km:"1200",control:"auto",fav:true},
+    {name:"BMW409",img:"src/assets/img/Good/4.jpg",con:"جديدة",neg:true,price:"8,00,000",date:"2020",tayp:"disle",km:"1200",control:"auto",fav:true},
   ])
   let Good=Goods.map((item)=>{return(<div class="offer2">
       <img src={item.img}/> 
@@ -109,7 +109,7 @@ function Main() {
           <div class="t"><div></div> المستودعات </div>
           <NavLink className="oth" to="/studio"><p>رؤية المزيد</p></NavLink>
         </div>
-              <div class="pope">
+              <div class="popestudio">
           <div class="scrol1" >
             {studio}
             
@@ -120,7 +120,7 @@ function Main() {
 
 
               
-              <div class="titre">
+              {/*<div class="titre">
           <div class="t"><div></div> العروض المميزة</div>
           <NavLink className="oth" to="/good"><p>رؤية المزيد</p></NavLink>
         </div>
@@ -133,8 +133,30 @@ function Main() {
             
           </div>
             
+              </div>*/}
+          <div className="end">
+            <div className="end1">
+              <img src="src/assets/img/logo/logo9.png" class="logo"/>
+              <p>السوق الجزائري الموثوق</p>
+              <div className="end1-1" >
+                <p>امان<i className="bi bi-shield-check"></i></p>
+                <p>تواصل مباشر<i className="bi bi-chat"></i></p>
+                <p>ميزات اسطورية<i className="bi bi-stars"></i></p>
+                <p>بحث احترافي<i className="bi bi-search"></i></p>
               </div>
+            </div>
+            <div className="end2">
+              <p>   شراء وبيع السيارات ابحث عن سيارتك القادمة بثقة</p>
+              <p>من نحن</p>
+              <p>الشروط والخصوصية</p>
+
               
+              <p className="copyri"> جميع الحقوق محفوظة لـ ©soge dz</p>
+
+            </div>
+            
+          
+          </div>
           </div>      
           </div>
         </main>

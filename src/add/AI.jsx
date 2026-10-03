@@ -26,7 +26,7 @@ function AI() {
   return (
     <> 
       <main>
-        <div class="view">
+
       <div class="chatAI">        
         <div class="chat-blockAI">
           <div class="pageAI">
@@ -47,7 +47,7 @@ function AI() {
 
         
       </div>
-    </div>
+
       </main>
 
 
