@@ -10,16 +10,34 @@
   font-family: 'Tajawal' ;
 }
 
-
-.view{
-  align-content:center;
+#mainchat{
+  background:rgba(200,200,200,0.6);
+  height: 100vh;
 }
 
 
+.viewchat{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content:center;
+  align-items:center;
+}
+
+.pub3{
+  width: 15%;
+  border-radius:15px;
+  height: 80vh;
+}
+.pub3 img{
+  width: 100%;
+  height: 80vh;
+}
+
 
 .chat{
-  margin: auto;
-  margin-top: 50px;
+  background:white;
+  margin: 15px;
   height: 80vh;
   width: 80%;
   display: flex;
@@ -28,32 +46,85 @@
   border-radius: 15px;
 }
 .names{
-  
-  
   direction: rtl;
-  height: 100vh;
   width: 50%;
-  border-left: 2px gray solid;
+  border-left: 1px gray solid;
 }
+
+.carddat h6{
+  margin-right: 20px;
+}
+
+
+
+
+.time{
+  display: flex;
+  justify-content:end;
+  width: 60%;
+  align-self: start;
+}
+
+
+
 .calldiv{
-  height: 80vh;
+  -ms-overflow-style: none;  
+  scrollbar-width: none;  
+  height: 60vh;
   overflow-y: auto;
 }
 .calldiv2{
   display: flex;
   flex-direction: column;
 }
-.namestext{
-  background:;
+
+.namestext1{
+  font-weight: 500;
+  align-self:center;
+  margin-top: 15px;
+  margin-right: 20px;
   height: 5vh;
   direction: rtl;
-  font-size: 32px;
+  font-size: 30px;
+}
+
+
+
+.namestext{
+  align-self:center;
+  margin-top: 15px;
+  margin-right: 20px;
+  height: 5vh;
+  direction: rtl;
+  font-size: 30px;
   
 }
+
+.namestext i{
+  color: gold;
+}
+
+
+
+
+.namestext span{
+  margin-left: 10px;
+}
+
+
+
 .divfill{
-  border-bottom: 1px black solid;
+  position: relative;
+  border-bottom: 1px gray solid;
   
 }
+.divfill i{
+  position: absolute;
+  top: 40%;
+  left: 15%;
+}
+
+
 .fillnames{
   border:none;
   background:rgba(200,200,200,0.6);
@@ -71,16 +142,48 @@
 
 }
 .cell{
+  display: flex;
   z-index: 100;
   backdrop-filter:blur(30px);
-  box-shadow:2px 2px 8px black;
-  border-bottom: 1px black solid;
-  background:;
+  box-shadow:2px 2px 8px rgba(200,200,200,0.6);
+  border-bottom: 1px gray solid;
   height: 10vh;
   direction: rtl;
   font-size: 32px;
+  align-items:center;
+  
+  justify-content: space-between;
 }
+
+.cell i{
+  margin-left: 10px;
+}
+
+.card2 h6{
+  margin: 20px;
+  font-size: 16px;
+}
+
+.cell p{
+  margin-bottom: 10px;
+  margin-right: 5%;
+  font-size: 10px;
+}
+
+.card2{
+  display:flex ;
+  flex-direction: row;
+  backdrop-filter: blur(10px);
+  width: 100%;
+  height: 12vh;
+  width: 80%;
+  align-content: start;
+}
+
+
+
 .theoffer{
+  display: flex;
   z-index: 99;
   background:rgba(200,200,200,0.2);
   border-radius:15px;
@@ -92,6 +195,7 @@
   width: 95%;
   direction: rtl;
   font-size: 32px;
+  justify-content: space-between;
 }
 .theoffer div{
   font-size: 16px;
@@ -100,7 +204,6 @@
   display: flex;
   flex-direction: row;
   align-items:center;
-  
 }
 
 .theoffer div img{
@@ -116,49 +219,51 @@
   height: 45vh;
 }
 .page2{
-  
   display: flex;
   flex-direction: column;
 }
 .sent{
-  
   display: flex;
   flex-direction: row;
   gap: 10px;
   place-self: center;
+  
   border-radius: 40px;
   height: 7vh;
   width: 80%;
-  background:white;
-  box-shadow: 2px 2px 8px dimgrey;
-  direction: rtl;
+  background: rgba(200,200,200,0.5) ;
+  box-shadow: 2px 2px 8px rgba(200,200,200,0.5);
   align-items: center;
 }
 
-.sent-button{
-  margin-right: 10px ;
-  height: 45px;
-  width: 45px;
+#sentbutton{
+  margin: 5px;
+  height: 30px;
+  width: 30px;
   border-radius: 50%;
-  background:;
-  align-content: center;
-  text-align: center;
   font-size: 30px;
+  display: flex;
+  justify-content: center; 
+  align-items: center;  
 }
 .chatinput{
-  border-radius:20px;
-  width: 85%;
+  border-radius:15px;
+  width: 80%;
   height: 3vh;
   background:none;
   border: 1px hwb(0 77% 23%) solid;
+  background:rgba(200,200,200,0.6);
 }
+.addimg{
+  display: none;
+}
+
+
 .card{
   display:flex ;
   flex-direction: row;
-  backdrop-filter: blur(10px);
   width: 100%;
   height: 12vh;
-  border-bottom: 1px gray solid;
 }
 .sh{
   width: 300px;
@@ -178,7 +283,6 @@
 
 .photo1{
   border:1px black solid;
-  padding: 10px;
   place-self: center;
   align-self: center;
   margin: 10px;
@@ -188,11 +292,15 @@
   border-radius: 50%;
 }
 
-.profillimg .bi.bi-circle-fill{ 
+.profillimg .online{ 
   opacity: 1;
   z-index: 100;
   position: absolute;
-  color: green;
+  background: green;
+  border:white 5px solid;
+  border-radius: 50%;
+  height: 15px;
+  width: 15px;
   top: 65%;
   left: 14%;
   transition: 0.75s;
@@ -220,10 +328,12 @@ h3{
   direction: ltr;
 }
 .bubble2 h3{
+  color:white;
+  font-size: 16px;
+  box-shadow:2px 2px 2px gray;
   padding: 20px;
   margin: 10px;
   display: inline-block;
-  border-radius: 20px 20px 20px 20px;
-  
-  background:rgba(255,255,255);
+  border-radius: 0px 20px 20px 20px;
+  background:black;
 }

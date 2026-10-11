@@ -16,27 +16,32 @@ function Chat() {
   }
   let [write,setwrite]=useState("")
   let [chats,setchats]=useState([])
+  let [img,setimg]=useState("")
   let chat=chats.map((item)=>{
-    return(<div class="bubble"> <h3>{item.name}</h3></div>)
+    return(<><div class="bubble"> <h3>{item.name}</h3></div><div class="bubble2"> <h3>{item.name}</h3></div></>)
   })
   let calls=[
-    {id:1,name:"ahmed",src:3},{id:2,name:"ahmed",src:3},{id:3,name:"ahmed",src:3},{id:4,name:"ahmed",src:3},{id:5,name:"ahmed",src:3},{id:6,name:"ahmed",src:3},{id:7,name:"ahmed",src:3}]
+    {id:1,name:"ahmed",src:3,last:"يخي بوراس",time:'10:30'},{id:2,name:"ahmed",src:3,last:"هههههيخي بوراس"},{id:3,name:"ahmed",src:3,last:"يخي بوراس"},{id:4,name:"ahmed",src:3,last:"يخي بوراس"},{id:5,name:"ahmed",src:3,last:"يخي بوراس"},{id:6,name:"ahmed",src:3,last:"يخي بوراس"},{id:7,name:"ahmed",src:3,last:"يخي بوراس"}]
   let [page,setpage]=useState()
   let call=calls.map((item1)=>{
-    return(<div class="card" onClick={()=>{setpage(item1.id)}} style={{background: page===item1.id? "rgba(255,240,0,0.2)" : "white"}}> <div className="profillimg"><img class="photo1" src="src/assets/img/car/2.png"/><i className="bi bi-circle-fill"></i></div> <h3>{item1.name}</h3></div>)
+    return(<div class="card" onClick={()=>{setpage(item1.id)}} style={{background: page===item1.id? "rgba(255,240,0,0.2)" : "white"}}> <div className="profillimg"><img class="photo1" src={img}/><div className="online"></div></div> <div className="carddat"> <h3>{item1.name}</h3><h6>{item1.last}</h6></div><div className="time" ><h3>{item1.time}</h3></div></div>)
   })
   return (
     <> 
-      <main>
+      <main id="mainchat">
         <Left/>
-
-      <div class="chat">
-        
+        <div className="namestext1">محادثات</div>
+      <div className="viewchat">
+        <div className="pub3"><img src="src/assets/pub/pub.png"/></div>
+        <div class="chat">
         
         
         <div class="chat-block">
           <div class="cell">
-            <div></div>
+            <div class="card2" > <div className="profillimg">
+              <img class="photo1" /><div className="online"></div></div> <div className="carddat"><h6>خليل عمك</h6><p>متصل الان</p></div><div className="time" ><h3></h3></div></div>
+            <i className="bi bi-three-dots-vertical"></i>
+
           </div>
           <div class="theoffer">
             <div>
@@ -46,6 +51,7 @@ function Chat() {
                 <br/>
                 <p>BMW</p>
               </div>
+              <i className="bi bi-caret-left"></i>
             </div>
           </div>
           <div class="page">
@@ -56,15 +62,15 @@ function Chat() {
             
           </div>
           <div class="sent">
-            <div class="sent-button" onClick={Speak} ><i class="bi bi-telegram"></i></div>
+            <div class="bi bi-telegram" id="sentbutton" onClick={Speak} ></div>
             <input className="chatinput" type="text" placeholder="راسل..." value={write} onChange={(e) => setwrite(e.target.value)} />
-
+            <label class="bi bi-plus" id="sentbutton" htmlfor="4" onClick={Speak} ><input type="file" className="addimg" id="4" value={img} onChange={(e)=>{setimg(e.target.value)}}></input></label>
             
           </div>
         </div>
         <div class="names">
-          <div className="namestext">محادثات</div>
-          <div className="divfill" ><input className="fillnames" placeholder="ابحث عن محادثة..." ></input></div>
+          <div className="namestext"><span>رسائلي</span><i className="bi bi-pencil-square"></i></div>
+          <div className="divfill" ><input className="fillnames" placeholder="ابحث عن محادثة..." /><i className="bi bi-search"></i></div>
           
           <div className="calldiv"  >
             <div className="calldiv2">
@@ -76,6 +82,7 @@ function Chat() {
 
         
     </div>
+      </div>
       </main>
 
 

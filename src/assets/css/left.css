@@ -156,21 +156,9 @@
 /*this is When the system is dark*/
 @media (prefers-color-scheme: dark) {
   .left{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-
   background:linear-gradient(rgba(28,28,28),rgba(0,0,0));
 }
 .left section{
-  display: flex;
-  flex-direction: column;
-  gap: 15px;
-  height: 70vh;
-  width: 80%;
-  margin: auto;
-  margin-top: 0;
-  margin-bottom: 0;
 }
 .left div{
   color: gold;
@@ -178,6 +166,13 @@
 .left div:hover{
   color: white;
 }
+.not i{
+  color:white;
+}
+
+
+
+  
 }
 /*this media for phone*/
 @media (max-width:800px){
@@ -199,7 +194,6 @@
 }
   .left span{
 }
-
 
   
 }
